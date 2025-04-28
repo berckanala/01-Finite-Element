@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  27 APR 2025 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  28 APR 2025 09:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -663,7 +663,8 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box73
-) (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.aux)
+)
+No file Main.aux.
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
@@ -684,7 +685,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
- (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
 \scratchdimen=\dimen322
@@ -762,32 +763,18 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 77.
-(c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.out) (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.out)
 \@outlinefile=\write4
 \openout4 = `Main.out'.
 
-<LOGO_UNIVERSIDAD.jpg, id=58, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=6, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 82.
 (pdftex.def)             Requested size: 366.24527pt x 132.80438pt.
- [1
+[1
 
-{C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./LOGO_UNIVERSIDAD.jpg>] (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.toc (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
- (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
- (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
+{C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./LOGO_UNIVERSIDAD.jpg>]
+No file Main.toc.
 \tf@toc=\write5
 \openout5 = `Main.toc'.
 
@@ -801,10 +788,26 @@ Overfull \hbox (2.8893pt too wide) in paragraph at lines 131--133
 \OT1/ptm/m/n/12 (-20) sce-nar-ios are con-sid-ered: dis-tributed load, point load, and dis-tributed load in-clud-ing the self-weight
  []
 
+(C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
+ (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
+ (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\HP\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 150.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 45.84833pt, for example:
@@ -818,17 +821,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.150 \newpage
                [1]
-<Resultados/Deformed_sctructure_-_Case_1.png, id=91, 578.16pt x 433.62pt>
+<Resultados/Deformed_sctructure_-_Case_1.png, id=25, 578.16pt x 433.62pt>
 File: Resultados/Deformed_sctructure_-_Case_1.png Graphic file (type png)
 <use Resultados/Deformed_sctructure_-_Case_1.png>
 Package pdftex.def Info: Resultados/Deformed_sctructure_-_Case_1.png  used on input line 164.
 (pdftex.def)             Requested size: 366.24527pt x 274.68399pt.
-<Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png, id=93, 578.16pt x 433.62pt>
+<Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png, id=27, 578.16pt x 433.62pt>
 File: Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png>
 Package pdftex.def Info: Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 173.
 (pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png, id=94, 578.16pt x 433.62pt>
+<Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png, id=28, 578.16pt x 433.62pt>
 File: Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png Graphic file (type png)
 <use Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png>
 Package pdftex.def Info: Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png  used on input line 180.
@@ -846,342 +849,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [2 <./Resultados/Deformed_sctructure_-_Case_1.png>]
-<Resultados/Case_1_-_Strain_εxx.png, id=102, 578.16pt x 433.62pt>
+<Resultados/Case_1_-_Strain_εxx.png, id=38, 578.16pt x 433.62pt>
 File: Resultados/Case_1_-_Strain_εxx.png Graphic file (type png)
 <use Resultados/Case_1_-_Strain_εxx.png>
 Package pdftex.def Info: Resultados/Case_1_-_Strain_εxx.png  used on input line 190.
 (pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Strain_εxy.png, id=103, 578.16pt x 433.62pt>
+<Resultados/Case_1_-_Strain_εxy.png, id=39, 578.16pt x 433.62pt>
 File: Resultados/Case_1_-_Strain_εxy.png Graphic file (type png)
 <use Resultados/Case_1_-_Strain_εxy.png>
 Package pdftex.def Info: Resultados/Case_1_-_Strain_εxy.png  used on input line 197.
 (pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Strain_εyy.png, id=104, 578.16pt x 433.62pt>
+<Resultados/Case_1_-_Strain_εyy.png, id=40, 578.16pt x 433.62pt>
 File: Resultados/Case_1_-_Strain_εyy.png Graphic file (type png)
 <use Resultados/Case_1_-_Strain_εyy.png>
 Package pdftex.def Info: Resultados/Case_1_-_Strain_εyy.png  used on input line 207.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Maximum_Principal_Strain_ε1.png, id=105, 578.16pt x 433.62pt>
-File: Resultados/Case_1_-_Maximum_Principal_Strain_ε1.png Graphic file (type png)
-<use Resultados/Case_1_-_Maximum_Principal_Strain_ε1.png>
-Package pdftex.def Info: Resultados/Case_1_-_Maximum_Principal_Strain_ε1.png  used on input line 214.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Minimum_Principal_Stress_σ2.png, id=106, 578.16pt x 433.62pt>
-File: Resultados/Case_1_-_Minimum_Principal_Stress_σ2.png Graphic file (type png)
-<use Resultados/Case_1_-_Minimum_Principal_Stress_σ2.png>
-Package pdftex.def Info: Resultados/Case_1_-_Minimum_Principal_Stress_σ2.png  used on input line 224.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Stress_σxx.png, id=107, 578.16pt x 433.62pt>
-File: Resultados/Case_1_-_Stress_σxx.png Graphic file (type png)
-<use Resultados/Case_1_-_Stress_σxx.png>
-Package pdftex.def Info: Resultados/Case_1_-_Stress_σxx.png  used on input line 231.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 236.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[3 <./Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png> <./Resultados/Case_1_-_Minimum_Principal_Strain_ε2.png> <./Resultados/Case_1_-_Strain_εxx.png> <./Resultados/Case_1_-_Strain_εxy.png> <./Resultados/Case_1_-_Strain_εyy.png> <./Resultados/Case_1_-_Maximum_Principal_Strain_ε1.png>]
-<Resultados/Case_1_-_Stress_σxy.png, id=121, 578.16pt x 433.62pt>
-File: Resultados/Case_1_-_Stress_σxy.png Graphic file (type png)
-<use Resultados/Case_1_-_Stress_σxy.png>
-Package pdftex.def Info: Resultados/Case_1_-_Stress_σxy.png  used on input line 241.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Stress_σyy.png, id=122, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Stress_σyy.png Graphic file (type png)
-<use Resultados/Case_2_-_Stress_σyy.png>
-Package pdftex.def Info: Resultados/Case_2_-_Stress_σyy.png  used on input line 248.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 254.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[4 <./Resultados/Case_1_-_Minimum_Principal_Stress_σ2.png> <./Resultados/Case_1_-_Stress_σxx.png> <./Resultados/Case_1_-_Stress_σxy.png> <./Resultados/Case_2_-_Stress_σyy.png>]
-<Resultados/Deformed_sctructure_-_Case_2.png, id=133, 578.16pt x 433.62pt>
-File: Resultados/Deformed_sctructure_-_Case_2.png Graphic file (type png)
-<use Resultados/Deformed_sctructure_-_Case_2.png>
-Package pdftex.def Info: Resultados/Deformed_sctructure_-_Case_2.png  used on input line 267.
-(pdftex.def)             Requested size: 366.24527pt x 274.68399pt.
-<Resultados/Case_2_-_Maximum_Principal_Stress_σ1.png, id=134, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_2_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 277.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Minimum_Principal_Strain_ε2.png, id=135, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Minimum_Principal_Strain_ε2.png Graphic file (type png)
-<use Resultados/Case_2_-_Minimum_Principal_Strain_ε2.png>
-Package pdftex.def Info: Resultados/Case_2_-_Minimum_Principal_Strain_ε2.png  used on input line 284.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 289.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[5 <./Resultados/Deformed_sctructure_-_Case_2.png>]
-<Resultados/Case_2_-_Strain_εxx.png, id=143, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Strain_εxx.png Graphic file (type png)
-<use Resultados/Case_2_-_Strain_εxx.png>
-Package pdftex.def Info: Resultados/Case_2_-_Strain_εxx.png  used on input line 294.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Strain_εxy.png, id=144, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Strain_εxy.png Graphic file (type png)
-<use Resultados/Case_2_-_Strain_εxy.png>
-Package pdftex.def Info: Resultados/Case_2_-_Strain_εxy.png  used on input line 301.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Strain_εyy.png, id=145, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Strain_εyy.png Graphic file (type png)
-<use Resultados/Case_2_-_Strain_εyy.png>
-Package pdftex.def Info: Resultados/Case_2_-_Strain_εyy.png  used on input line 311.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Maximum_Principal_Strain_ε1.png, id=146, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Maximum_Principal_Strain_ε1.png Graphic file (type png)
-<use Resultados/Case_2_-_Maximum_Principal_Strain_ε1.png>
-Package pdftex.def Info: Resultados/Case_2_-_Maximum_Principal_Strain_ε1.png  used on input line 318.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Minimum_Principal_Stress_σ2.png, id=147, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Minimum_Principal_Stress_σ2.png Graphic file (type png)
-<use Resultados/Case_2_-_Minimum_Principal_Stress_σ2.png>
-Package pdftex.def Info: Resultados/Case_2_-_Minimum_Principal_Stress_σ2.png  used on input line 328.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_2_-_Stress_σxx.png, id=148, 578.16pt x 433.62pt>
-File: Resultados/Case_2_-_Stress_σxx.png Graphic file (type png)
-<use Resultados/Case_2_-_Stress_σxx.png>
-Package pdftex.def Info: Resultados/Case_2_-_Stress_σxx.png  used on input line 335.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 340.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[6 <./Resultados/Case_2_-_Maximum_Principal_Stress_σ1.png> <./Resultados/Case_2_-_Minimum_Principal_Strain_ε2.png> <./Resultados/Case_2_-_Strain_εxx.png> <./Resultados/Case_2_-_Strain_εxy.png> <./Resultados/Case_2_-_Strain_εyy.png> <./Resultados/Case_2_-_Maximum_Principal_Strain_ε1.png>]
-File: Resultados/Case_1_-_Stress_σxy.png Graphic file (type png)
-<use Resultados/Case_1_-_Stress_σxy.png>
-Package pdftex.def Info: Resultados/Case_1_-_Stress_σxy.png  used on input line 345.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_1_-_Stress_σyy.png, id=162, 578.16pt x 433.62pt>
-File: Resultados/Case_1_-_Stress_σyy.png Graphic file (type png)
-<use Resultados/Case_1_-_Stress_σyy.png>
-Package pdftex.def Info: Resultados/Case_1_-_Stress_σyy.png  used on input line 352.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 360.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[7 <./Resultados/Case_2_-_Minimum_Principal_Stress_σ2.png> <./Resultados/Case_2_-_Stress_σxx.png> <./Resultados/Case_1_-_Stress_σyy.png>]
-<Resultados/Deformed_sctructure_-_Case_3.png, id=172, 578.16pt x 433.62pt>
-File: Resultados/Deformed_sctructure_-_Case_3.png Graphic file (type png)
-<use Resultados/Deformed_sctructure_-_Case_3.png>
-Package pdftex.def Info: Resultados/Deformed_sctructure_-_Case_3.png  used on input line 374.
-(pdftex.def)             Requested size: 366.24527pt x 274.68399pt.
-<Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png, id=173, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 384.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Minimum_Principal_Strain_ε2.png, id=174, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Minimum_Principal_Strain_ε2.png Graphic file (type png)
-<use Resultados/Case_3_-_Minimum_Principal_Strain_ε2.png>
-Package pdftex.def Info: Resultados/Case_3_-_Minimum_Principal_Strain_ε2.png  used on input line 391.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 396.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[8 <./Resultados/Deformed_sctructure_-_Case_3.png>]
-<Resultados/Case_3_-_Strain_εxx.png, id=181, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Strain_εxx.png Graphic file (type png)
-<use Resultados/Case_3_-_Strain_εxx.png>
-Package pdftex.def Info: Resultados/Case_3_-_Strain_εxx.png  used on input line 401.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Strain_εxy.png, id=182, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Strain_εxy.png Graphic file (type png)
-<use Resultados/Case_3_-_Strain_εxy.png>
-Package pdftex.def Info: Resultados/Case_3_-_Strain_εxy.png  used on input line 408.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Strain_εyy.png, id=183, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Strain_εyy.png Graphic file (type png)
-<use Resultados/Case_3_-_Strain_εyy.png>
-Package pdftex.def Info: Resultados/Case_3_-_Strain_εyy.png  used on input line 418.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Maximum_Principal_Strain_ε1.png, id=184, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Maximum_Principal_Strain_ε1.png Graphic file (type png)
-<use Resultados/Case_3_-_Maximum_Principal_Strain_ε1.png>
-Package pdftex.def Info: Resultados/Case_3_-_Maximum_Principal_Strain_ε1.png  used on input line 425.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Minimum_Principal_Stress_σ2.png, id=185, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Minimum_Principal_Stress_σ2.png Graphic file (type png)
-<use Resultados/Case_3_-_Minimum_Principal_Stress_σ2.png>
-Package pdftex.def Info: Resultados/Case_3_-_Minimum_Principal_Stress_σ2.png  used on input line 435.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Stress_σxx.png, id=186, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Stress_σxx.png Graphic file (type png)
-<use Resultados/Case_3_-_Stress_σxx.png>
-Package pdftex.def Info: Resultados/Case_3_-_Stress_σxx.png  used on input line 442.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 447.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[9 <./Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png> <./Resultados/Case_3_-_Minimum_Principal_Strain_ε2.png> <./Resultados/Case_3_-_Strain_εxx.png> <./Resultados/Case_3_-_Strain_εxy.png> <./Resultados/Case_3_-_Strain_εyy.png> <./Resultados/Case_3_-_Maximum_Principal_Strain_ε1.png>]
-<Resultados/Case_3_-_Stress_σxy.png, id=200, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Stress_σxy.png Graphic file (type png)
-<use Resultados/Case_3_-_Stress_σxy.png>
-Package pdftex.def Info: Resultados/Case_3_-_Stress_σxy.png  used on input line 452.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_3_-_Stress_σyy.png, id=201, 578.16pt x 433.62pt>
-File: Resultados/Case_3_-_Stress_σyy.png Graphic file (type png)
-<use Resultados/Case_3_-_Stress_σyy.png>
-Package pdftex.def Info: Resultados/Case_3_-_Stress_σyy.png  used on input line 459.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 465.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[10 <./Resultados/Case_3_-_Minimum_Principal_Stress_σ2.png> <./Resultados/Case_3_-_Stress_σxx.png> <./Resultados/Case_3_-_Stress_σxy.png> <./Resultados/Case_3_-_Stress_σyy.png>]
-File: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 483.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-<Resultados/Case_low_resolution_3_-_Maximum_Principal_Stress_σ1.png, id=212, 578.16pt x 433.62pt>
-File: Resultados/Case_low_resolution_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_low_resolution_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_low_resolution_3_-_Maximum_Principal_Stress_σ1.png  used on input line 490.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 476--494
-
- []
-
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 506.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[11 <./Resultados/Case_low_resolution_3_-_Maximum_Principal_Stress_σ1.png>]
-File: Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 513.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
-<use Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: Resultados/Case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 520.
-(pdftex.def)             Requested size: 219.74437pt x 164.80377pt.
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 541.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[12] 
-AED: lastpage setting LastPage
-File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
-<use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 550.
-(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 45.84833pt, for example:
-(fancyhdr)                \setlength{\headheight}{45.84833pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
-
-[13] (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
- ***********
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: CF4F699E9735FA42F5774FAEE708496D;3985.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 124 (\begingroup)
-### bottom level 
-Here is how much of TeX's memory you used:
- 26277 strings out of 474485
- 491802 string characters out of 5745150
- 1933542 words of memory out of 5000000
- 47936 multiletter control sequences out of 15000+600000
- 576903 words of font info for 145 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 84i,16n,93p,1136b,537s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\T2\Entrega_final\build\Main.pdf (15 pages, 3466864 bytes).
-PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 28447 words of extra memory for PDF output out of 29859 (max. 10000000)
-
+(pdftex.def)             
