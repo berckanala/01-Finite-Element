@@ -431,6 +431,39 @@ To transform the global coordinates to the local coordinates, we can use the fol
   \end{bmatrix}
 \end{align}
 
+And now we need to specify the interpolation matrix N(x,y), because: 
+
+$$B(x,y)= D\cdot N(x,y)$$
+
+So, we can use the following equations to calculate the interpolation matrix:
+
+\begin{align}
+  D(x,y) &= \begin{bmatrix}
+    N_1(x,y) & 0 & N_2(x,y) & 0 & N_3(x,y) & 0 \\
+    0 & N_1(x,y) & 0 & N_2(x,y) & 0 & N_3(x,y)
+  \end{bmatrix} =
+  \begin{bmatrix}
+    \zeta_1 & 0 & \zeta_2 & 0 & \zeta_3 & 0 \\
+    0 & \zeta_1 & 0 & \zeta_2 & 0 & \zeta_3
+  \end{bmatrix} \\
+\end{align}
+
+With the interpolation matrix, we can calculate the strain-displacement matrix B(x,y) using the following equations:
+
+\begin{align}
+  B(x,y) &= \frac{1}{2 \cdot A^e} \begin{bmatrix}
+    \frac{\partial N_1}{\partial x} & 0 & \frac{\partial N_2}{\partial x} & 0 & \frac{\partial N_3}{\partial x} & 0 \\
+    0 & \frac{\partial N_1}{\partial y} & 0 & \frac{\partial N_2}{\partial y} & 0 & \frac{\partial N_3}{\partial y} \\
+    \frac{\partial N_1}{\partial y} & \frac{\partial N_1}{\partial x} & \frac{\partial N_2}{\partial y} & \frac{\partial N_2}{\partial x} & \frac{\partial N_3}{\partial y} & \frac{\partial N_3}{\partial x}
+  \end{bmatrix} 
+  = \begin{bmatrix}
+    \frac{y_2-y_3}{2A^e} & 0 & \frac{y_3-y_1}{2A^e} & 0 & \frac{y_1-y_2}{2A^e} & 0 \\
+    0 & \frac{x_3-x_2}{2A^e} & 0 & \frac{x_1-x_3}{2A^e} & 0 & \frac{x_2-x_1}{2A^e} \\
+    \frac{x_2-x_3}{2A^e} & \frac{y_2-y_3}{2A^e} & \frac{x_3-x_1}{2A^e} & \frac{y_3-y_1}{2A^e} & \frac{x_1-x_2}{2A^e} & \frac{y_1-y_2}{2A^e}
+  \end{bmatrix}
+\end{align}
+
+
 This changes the form to calculate the Stiffnes matrix and the force vector. The stiffness matrix is given by the following equation:
 \begin{align}
   \mathbf{K}^e &= \int_{\Omega^e} B^T E B d\Omega^e \rightarrow B^T(x,y) \cdot E_x \cdot B(x,y) \cdot  A^e \cdot t^e
@@ -447,6 +480,54 @@ While the force vector is given by the following equation:
     b_y \\
   \end{bmatrix} 
 \end{align}
+
+\section{Iso-parametric finite elements}
+There are two types of mesh refinement:
+\begin{itemize}
+    \item p-refinement: This is when we have the same number of elements in each direction, but we increase the order of the polynomial.
+    \item h-refinement: This is when we have the same order of the polynomial, but we increase the number of elements in each direction.
+\end{itemize}
+
+The p-refinement is used when we want to increase the accueracy of the solution, but leads to a Stiffness matrix with larger bandwidth.
+
+\subsection{Iso-parametric concept}
+A Finite element is iso-parametric if its shape and interpolation functions are the same. This means, that:
+\begin{itemize}
+  \item Convergence: The iso-parametric elements converge to the exact solution as the number of elements increases.
+  \item Consistency: The iso-parametric elements are consistent with the exact solution.
+  \item Stability: The iso-parametric elements are stable, which means that the solution does not oscillate or diverge.
+\end{itemize}
+
+In other words, needs to satisfy the following conditions:
+\begin{align}
+  1=\sum N_i^e \hspace{1cm} \forall i=1,2,\cdots,n \\
+  x= \sum N_i^e \cdot x_i \hspace{1cm} \forall i=1,2,\cdots,n \\
+  y= \sum N_i^e \cdot y_i \hspace{1cm} \forall i=1,2,\cdots,n \\
+  u_x= \sum N_i^e \cdot u_{xi} \hspace{1cm} \forall i=1,2,\cdots,n \\
+  u_y= \sum N_i^e \cdot u_{yi} \hspace{1cm} \forall i=1,2,\cdots,n \\
+\end{align}
+\newpage
+
+\section{Quad 4 element}
+The natural coordinates for a quadrilateral element are $\xi$ and $\eta$. As shown in the figure below:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Graphics/quad_4.PNG}
+    \caption{Quad 4 element}
+    \label{fig:quad_4_element}
+\end{figure}
+
+Due to the fact that the quad 4 element is represented by a bilinear polynomial, we can use the following equations to calculate the shape functions:
+\begin{align}
+  N_1(\xi,\eta) &= \frac{1}{4} (1-\xi)(1-\eta) \\
+  N_2(\xi,\eta) &= \frac{1}{4} (1+\xi)(1-\eta) \\
+  N_3(\xi,\eta) &= \frac{1}{4} (1+\xi)(1+\eta) \\
+  N_4(\xi,\eta) &= \frac{1}{4} (1-\xi)(1+\eta)
+\end{align}
+
+\subsection{Jacobian matrix}
+The Jacobian matrix is used to transform the coordinates from the natural coordinates to the global coordinates. The Jacobian matrix is given by the following equation:
+
 
 
 \end{document} % Fin del documento
