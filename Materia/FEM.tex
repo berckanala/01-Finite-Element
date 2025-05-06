@@ -133,7 +133,6 @@
 %----------------------------------------------------------------------------------------
 \HRule \\[0.4cm]
 { \huge \bfseries Finite Elements}\\[0.4cm] % Titulo del documento
-{ \huge \bfseries Laboratory 1}\\[0.4cm] % Titulo del documento
 \HRule \\[1.5cm]
  \vspace{5cm}
 %----------------------------------------------------------------------------------------
@@ -482,6 +481,7 @@ While the force vector is given by the following equation:
 \end{align}
 
 \section{Iso-parametric finite elements}
+This term is used to describe the finite elements that \textbf{have the same shape functions and the same interpolation functions}. This means that the shape functions are used to interpolate the displacements and the shape functions are used to interpolate the coordinates of the nodes. The iso-parametric elements are used to solve problems with complex geometries.\\
 There are two types of mesh refinement:
 \begin{itemize}
     \item p-refinement: This is when we have the same number of elements in each direction, but we increase the order of the polynomial.
@@ -526,8 +526,90 @@ Due to the fact that the quad 4 element is represented by a bilinear polynomial,
 \end{align}
 
 \subsection{Jacobian matrix}
-The Jacobian matrix is used to transform the coordinates from the natural coordinates to the global coordinates. The Jacobian matrix is given by the following equation:
+In quadrilateral element derivations we will need the Jacobian of two-dimensional transformations that connect the differentials of {x,y} to those of {$\xi, \eta$} and vice-versa.
+The Jacobian matrix is given by the following equation:
+\begin{align}
+  \begin{bmatrix}
+    dx \\
+    dy
+  \end{bmatrix}
+  & = \begin{bmatrix}
+    \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\
+    \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta}
+  \end{bmatrix}
+  \cdot
+  \begin{bmatrix}
+    d\xi \\
+    d\eta
+  \end{bmatrix}
+   = \mathbf{J^T} \cdot \begin{bmatrix}
+    d\xi \\
+    d\eta
+  \end{bmatrix}
+\end{align}
 
+\textbf{The scalar symbol J is the Jacobian determinant.}
+
+\subsection{Stiffness matrix and force vector}
+The stiffness matrix and the force vector are given by the following equations:
+\begin{align}
+  \mathbf{K}^e &= \int_{\Omega^e} B^T E B d\Omega^e \rightarrow \int_{-1}^{1}\int_{-1}^{1} B^T E det(I)d\xi d\eta\\
+  \mathbf{f}^e &= \int_{\Omega^e} N^T b d\Omega^e \rightarrow \int_{-1}^{1}\int_{-1}^{1} N^T b det(J)d\xi d\eta\\
+\end{align}
+
+
+\section{Numerical integration by Gauss Rules}
+The standard practice has been to use Gauss integration because such rules use a minimal number of sample points to achieve a desired level of accuracy
+\subsection{1D Gauss quadrature}
+The 1D Gauss quadrature is given by the following equation:
+\begin{align}
+  \int_{-1}^{1} f(x) dx & = \sum_{i=1}^{n} w_i f(x_i) \\
+\end{align}
+
+where $w_i$ are the weights and $x_i$ are the sample points. The weights and sample points are given by the following table:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Graphics/gauss_points.PNG}
+    \caption{One-Dimensional Gauss Rules with 1 through 5 Sample Points}
+    \label{fig:gauss_1d}
+\end{figure}
+
+\subsubsection{Example: Case 2 points}
+The 2 points Gauss quadrature is given by the following equation:
+\begin{align}
+  \int_{-1}^{1} f(x) dx & = w_1 f(x_1) + w_2 f(x_2) 
+\end{align}
+Now we can calculate the weights and the sample points. In order to do that, there are as many degrees of x as there are sample points. So, we can use the following Equations:
+
+Grade 0:
+\begin{align}
+  w_1 +w_2 &= 2 
+\end{align}
+
+Grade 1:
+\begin{align}
+  w_1 \cdot x_1 + w_2 \cdot x_2 &= 0 
+\end{align}
+
+Grade 2:
+\begin{align}
+  w_1 \cdot x_1^2 + w_2 \cdot x_2^2 &= \frac{2}{3} 
+\end{align}
+
+Solving the equations, we get the following results:  
+\begin{align}
+  w_1 &= 1 \\
+  w_2 &= 1 \\
+  x_1 &= -\frac{1}{\sqrt{3}} \\
+  x_2 &= \frac{1}{\sqrt{3}}
+\end{align}
+
+That is the same as in the table \ref{fig:gauss_1d}.
+\subsection{2D Gauss quadrature}
+The 2D Gauss quadrature is given by the following equation:
+\begin{align}
+  \int_{-1}^{1}\int_{-1}^{1} f(x,y) dx dy & = \sum_{i=1}^{n} \sum_{j=1}^{n} w_i w_j f(x_i,y_j) \\
+\end{align}
 
 
 \end{document} % Fin del documento
