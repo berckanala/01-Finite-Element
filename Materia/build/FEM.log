@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  5 MAY 2025 21:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.1.16)  6 MAY 2025 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,7 +894,7 @@ Package hyperref Info: Link coloring ON on input line 119.
 
 Couldn't patch \ttl@straight@ii
 Couldn't patch \ttl@straight@ii
-<LOGO_UNIVERSIDAD.jpg, id=90, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=94, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 129.
@@ -953,7 +953,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.226 \newpage
                [1]
-<Graphics/plane_stress.png, id=113, 88.53075pt x 98.16675pt>
+<Graphics/plane_stress.png, id=117, 88.53075pt x 98.16675pt>
 File: Graphics/plane_stress.png Graphic file (type png)
 <use Graphics/plane_stress.png>
 Package pdftex.def Info: Graphics/plane_stress.png  used on input line 231.
@@ -967,7 +967,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 301.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [2 <./Graphics/plane_stress.png>]
-<Graphics/boundary_c1.PNG, id=130, 345.6915pt x 152.9715pt>
+<Graphics/boundary_c1.PNG, id=134, 345.6915pt x 152.9715pt>
 File: Graphics/boundary_c1.PNG Graphic file (type png)
 <use Graphics/boundary_c1.PNG>
 Package pdftex.def Info: Graphics/boundary_c1.PNG  used on input line 307.
@@ -982,7 +982,7 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 399.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [4]
-<Graphics/CST_1.PNG, id=157, 317.38576pt x 93.34875pt>
+<Graphics/CST_1.PNG, id=161, 317.38576pt x 93.34875pt>
 File: Graphics/CST_1.PNG Graphic file (type png)
 <use Graphics/CST_1.PNG>
 Package pdftex.def Info: Graphics/CST_1.PNG  used on input line 407.
@@ -997,31 +997,35 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 509.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [6]
-<Graphics/quad_4.PNG, id=183, 357.13425pt x 172.2435pt>
+<Graphics/quad_4.PNG, id=187, 357.13425pt x 172.2435pt>
 File: Graphics/quad_4.PNG Graphic file (type png)
 <use Graphics/quad_4.PNG>
 Package pdftex.def Info: Graphics/quad_4.PNG  used on input line 515.
 (pdftex.def)             Requested size: 266.14978pt x 128.36491pt.
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 563.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 578.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [7 <./Graphics/quad_4.PNG>]
-<Graphics/gauss_points.PNG, id=199, 366.77025pt x 181.27725pt>
+<Graphics/gauss_points.PNG, id=202, 366.77025pt x 181.27725pt>
 File: Graphics/gauss_points.PNG Graphic file (type png)
 <use Graphics/gauss_points.PNG>
-Package pdftex.def Info: Graphics/gauss_points.PNG  used on input line 572.
+Package pdftex.def Info: Graphics/gauss_points.PNG  used on input line 606.
 (pdftex.def)             Requested size: 354.86412pt x 175.40169pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 597.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 631.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [8 <./Graphics/gauss_points.PNG>]
+[8]
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 615.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 649.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [9] (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\Materia\build\FEM.aux
+ [9 <./Graphics/gauss_points.PNG>] (c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\Materia\build\FEM.aux
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 )
@@ -1030,20 +1034,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `FEM.out' has not changed.
-(rerunfilecheck)             Checksum: 6A1D1AE7FEE57F5CEEB99AB3C54735DE;3712.
+(rerunfilecheck)             Checksum: CFECEDBEB5FA13A30C89BB2BF6832486;4012.
  ) 
 Here is how much of TeX's memory you used:
- 29330 strings out of 474485
- 542563 string characters out of 5745150
+ 29336 strings out of 474485
+ 542681 string characters out of 5745150
  1952542 words of memory out of 5000000
- 50900 multiletter control sequences out of 15000+600000
+ 50903 multiletter control sequences out of 15000+600000
  603198 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,17n,87p,1198b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/HP/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\Materia\build\FEM.pdf (10 pages, 514855 bytes).
+Output written on c:\Users\HP\Desktop\Uandes\9no_semestre\01-Finite-Element\Materia\build\FEM.pdf (10 pages, 517090 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 45785 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 45793 words of extra memory for PDF output out of 51595 (max. 10000000)
 

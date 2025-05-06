@@ -529,31 +529,65 @@ Due to the fact that the quad 4 element is represented by a bilinear polynomial,
 In quadrilateral element derivations we will need the Jacobian of two-dimensional transformations that connect the differentials of {x,y} to those of {$\xi, \eta$} and vice-versa.
 The Jacobian matrix is given by the following equation:
 \begin{align}
-  \begin{bmatrix}
-    dx \\
-    dy
-  \end{bmatrix}
-  & = \begin{bmatrix}
+  \mathbf{J}=
+  &  \begin{bmatrix}
     \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\
     \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta}
+  \end{bmatrix} 
+ &
+ \mathbf{J^{-1}}=
+  &  \begin{bmatrix}
+    \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\
+    \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y}
   \end{bmatrix}
-  \cdot
-  \begin{bmatrix}
-    d\xi \\
-    d\eta
-  \end{bmatrix}
-   = \mathbf{J^T} \cdot \begin{bmatrix}
-    d\xi \\
-    d\eta
-  \end{bmatrix}
+  &
+  \det(\mathbf{J}) = 
+\frac{\partial x}{\partial \xi} \cdot \frac{\partial y}{\partial \eta} - \frac{\partial y}{\partial \xi} \cdot \frac{\partial x}{\partial \eta}
+&
 \end{align}
 
 \textbf{The scalar symbol J is the Jacobian determinant.}
 
+\subsection{Construction of the strain-displacement matrix}
+
+To construct the strain-displacement matrix, we need to use the following equation:
+\begin{equation}
+  B = D \cdot J^{-1} \cdot N
+\end{equation}
+
+Replacing the Jacobian matrix in the equation, we get the following equation:
+\begin{equation}
+  B =   \begin{bmatrix}
+    \frac{\partial}{\partial x} & 0 \\
+    0 & \frac{\partial}{\partial y} \\
+    \frac{\partial}{\partial y} & \frac{\partial}{\partial x}
+        \end{bmatrix}
+ \cdot 
+  \begin{bmatrix}
+    \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\
+    \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta}
+  \end{bmatrix}^{-1} 
+  \begin{bmatrix}
+    N_1 & 0     & N_2 & 0 & \cdots &N_4 & 0     \\
+    0     & N_1 & 0 & N_2 & \cdots &0     & N_4
+  \end{bmatrix}
+\end{equation}
+
+Then, the matrix \( \boldsymbol{B} \) for a 4-node quadrilateral element (Q4) is assembled as:
+
+\[
+\boldsymbol{B} =
+\begin{bmatrix}
+\frac{\partial N_1}{\partial x} & 0 & \frac{\partial N_2}{\partial x} & 0 & \frac{\partial N_3}{\partial x} & 0 & \frac{\partial N_4}{\partial x} & 0 \\
+0 & \frac{\partial N_1}{\partial y} & 0 & \frac{\partial N_2}{\partial y} & 0 & \frac{\partial N_3}{\partial y} & 0 & \frac{\partial N_4}{\partial y} \\
+\frac{\partial N_1}{\partial y} & \frac{\partial N_1}{\partial x} & \frac{\partial N_2}{\partial y} & \frac{\partial N_2}{\partial x} & \frac{\partial N_3}{\partial y} & \frac{\partial N_3}{\partial x} & \frac{\partial N_4}{\partial y} & \frac{\partial N_4}{\partial x}
+\end{bmatrix}
+\]
+
 \subsection{Stiffness matrix and force vector}
 The stiffness matrix and the force vector are given by the following equations:
 \begin{align}
-  \mathbf{K}^e &= \int_{\Omega^e} B^T E B d\Omega^e \rightarrow \int_{-1}^{1}\int_{-1}^{1} B^T E det(I)d\xi d\eta\\
+  \mathbf{K}^e &= \int_{\Omega^e} B^T E B d\Omega^e \rightarrow \int_{-1}^{1}\int_{-1}^{1} B^T E B det(J)d\xi d\eta\\
   \mathbf{f}^e &= \int_{\Omega^e} N^T b d\Omega^e \rightarrow \int_{-1}^{1}\int_{-1}^{1} N^T b det(J)d\xi d\eta\\
 \end{align}
 
