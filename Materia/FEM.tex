@@ -550,26 +550,34 @@ The Jacobian matrix is given by the following equation:
 
 \subsection{Construction of the strain-displacement matrix}
 
-To construct the strain-displacement matrix, we need to use the following equation:
+To construct the strain-displacement matrix, we need to assemble the following matrices:
 \begin{equation}
-  B = D \cdot J^{-1} \cdot N
+  B = [B_1, B_2, B_3, B4]
 \end{equation}
+
+Where \( B_i \) is the strain-displacement matrix for each node. The strain-displacement matrix is given by the following equation:
+
 
 Replacing the Jacobian matrix in the equation, we get the following equation:
 \begin{equation}
-  B =   \begin{bmatrix}
-    \frac{\partial}{\partial x} & 0 \\
-    0 & \frac{\partial}{\partial y} \\
-    \frac{\partial}{\partial y} & \frac{\partial}{\partial x}
-        \end{bmatrix}
- \cdot 
-  \begin{bmatrix}
+  B_{first1} =  \begin{bmatrix}
     \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\
     \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta}
-  \end{bmatrix}^{-1} 
+    \end{bmatrix}^{-1} 
   \begin{bmatrix}
-    N_1 & 0     & N_2 & 0 & \cdots &N_4 & 0     \\
-    0     & N_1 & 0 & N_2 & \cdots &0     & N_4
+    \frac{\partial N_1}{\partial \xi} \\
+    \frac{\partial N_1}{\partial \eta} \\
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    \frac{\partial N_1}{\partial x} \\
+    \frac{\partial N_1}{\partial y} 
+  \end{bmatrix}
+  \rightarrow
+  B_1= \begin{bmatrix}
+    \frac{\partial N_1}{\partial x} & 0 \\
+    0 & \frac{\partial N_1}{\partial y} \\
+    \frac{\partial N_1}{\partial y} & \frac{\partial N_1}{\partial x}
   \end{bmatrix}
 \end{equation}
 
