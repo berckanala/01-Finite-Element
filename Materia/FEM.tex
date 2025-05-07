@@ -430,6 +430,9 @@ To transform the global coordinates to the local coordinates, we can use the fol
   \end{bmatrix}
 \end{align}
 
+Also, is important to calculate the area:
+$$\frac{A}{2}= x_0y_1 - x_0 y_2 - x_1y_0 +x_1y_2 +x_2y_0 - x_2y_1$$
+
 And now we need to specify the interpolation matrix N(x,y), because: 
 
 $$B(x,y)= D\cdot N(x,y)$$
@@ -525,9 +528,31 @@ Due to the fact that the quad 4 element is represented by a bilinear polynomial,
   N_4(\xi,\eta) &= \frac{1}{4} (1-\xi)(1+\eta)
 \end{align}
 
+The derivatives of the shape functions are given by the following equations:
+\begin{align}
+  \frac{\partial N_1}{\partial \xi} = \frac{1}{4} (-1)(1-\eta) & \hspace{0.5cm}
+  \frac{\partial N_1}{\partial \eta} = \frac{1}{4} (-1)(1-\xi) \\
+  \frac{\partial N_2}{\partial \xi} = \frac{1}{4} (1)(1-\eta) & \hspace{0.5cm}
+  \frac{\partial N_2}{\partial \eta} = \frac{1}{4} (-1)(1+\xi) \\
+  \frac{\partial N_3}{\partial \xi} = \frac{1}{4} (1)(1+\eta) & \hspace{0.5cm}
+  \frac{\partial N_3}{\partial \eta} = \frac{1}{4} (1)(1+\xi) \\
+  \frac{\partial N_4}{\partial \xi} = \frac{1}{4} (-1)(1+\eta) & \hspace{0.5cm}
+  \frac{\partial N_4}{\partial \eta} = \frac{1}{4} (1)(1-\xi) \\
+\end{align}
+
 \subsection{Jacobian matrix}
 In quadrilateral element derivations we will need the Jacobian of two-dimensional transformations that connect the differentials of {x,y} to those of {$\xi, \eta$} and vice-versa.
+Is important to mention that $x_i$ and $y_i$ are global coordinates of the quad.
 The Jacobian matrix is given by the following equation:
+\begin{equation}
+  J= \begin{bmatrix}
+    \sum \frac{\partial N_i}{\partial \xi} \cdot x_i & \sum \frac{\partial N_i}{\partial \xi} \cdot y_i \\
+    \sum \frac{\partial N_i}{\partial \eta} \cdot x_i & \sum \frac{\partial N_i}{\partial \eta} \cdot y_i \\
+  \end{bmatrix}
+\end{equation}
+
+
+
 \begin{align}
   \mathbf{J}=
   &  \begin{bmatrix}

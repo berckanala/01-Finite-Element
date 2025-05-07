@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1746633059.80019 "c:/Users/HP/Desktop/Uandes/9no_semestre/01-Finite-Element/Materia/FEM.tex" "build/FEM.pdf" "FEM" 1746633062.51154 0
+["pdflatex"] 1746635421.06852 "c:/Users/HP/Desktop/Uandes/9no_semestre/01-Finite-Element/Materia/FEM.tex" "build/FEM.pdf" "FEM" 1746635423.64522 0
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745806504 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1743883286 11548 bed362cf0020b2ef386cbc689dc72075 ""
   "C:/Users/HP/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1744470067 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -199,16 +199,16 @@
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1700599895 7147 d45559f8a31b8c53ada0640516660003 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/HP/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "FEM.tex" 1746633059 25772 51ae77ccb21b380111a96aa0d6b28e82 ""
+  "FEM.tex" 1746635419 26961 76bfbf58a402c98de6eb904bc92afcb6 ""
   "Graphics/CST_1.PNG" 1746323889 22616 6387425a65451eb04298a9135d676e76 ""
   "Graphics/boundary_c1.PNG" 1746292646 40670 301d7ca2863e4e53136c346b607951b4 ""
   "Graphics/gauss_points.PNG" 1746494640 59086 85d8b3a74cbde33cd2cee1d504721c35 ""
   "Graphics/plane_stress.png" 1746291513 5088 9bed6cc8457a561ba0a14e4f678de4bf ""
   "Graphics/quad_4.PNG" 1746456321 65845 949d890f23653897fa9807f0ad33f57d ""
   "LOGO_UNIVERSIDAD.jpg" 1725225542 209820 2134e729a4493a99d3d34c719af1eecf ""
-  "build/FEM.aux" 1746633062 4537 52d27e17486097c85c6b7425e011d2a9 "pdflatex"
-  "build/FEM.out" 1746633062 4012 cfecedbeb5fa13a30c89bb2bf6832486 "pdflatex"
-  "c:/Users/HP/Desktop/Uandes/9no_semestre/01-Finite-Element/Materia/FEM.tex" 1746633059 25772 51ae77ccb21b380111a96aa0d6b28e82 ""
+  "build/FEM.aux" 1746635423 4538 e91b7a4e99e23a85559e0adfef035768 "pdflatex"
+  "build/FEM.out" 1746635423 4012 cfecedbeb5fa13a30c89bb2bf6832486 "pdflatex"
+  "c:/Users/HP/Desktop/Uandes/9no_semestre/01-Finite-Element/Materia/FEM.tex" 1746635419 26961 76bfbf58a402c98de6eb904bc92afcb6 ""
   (generated)
   "build/FEM.aux"
   "build/FEM.log"
