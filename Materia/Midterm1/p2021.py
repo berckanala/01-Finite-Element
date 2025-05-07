@@ -6,7 +6,7 @@ P = np.array([4.0, 4.0])
 
 # Coordenadas de los nodos del Q4 en el espacio físico (u_1)
 # Formato: [x1, y1, x2, y2, ..., x4, y4]
-u_1 = [0, 3, 3, 0, 9, 0, 0, 9]
+u_1 = [3, 0, 9, 0, 0, 9, 0, 3]
 coords = np.array(u_1).reshape(4, 2)
 
 # Función que define el sistema de ecuaciones
@@ -60,17 +60,17 @@ import numpy as np
 coords = np.array([
     [0.0, 3.0],   # Nodo 1
     [3.0, 0.0],   # Nodo 2
-    [0.0, 9.0],   # Nodo 3
+    [9.0, 0.0],   # Nodo 3
     [0.0, 9.0]    # Nodo 4
 ])
 coords_desplazado = np.array([
     [0.0, 1.0],   # Nodo 1
     [5.0, 0.0],   # Nodo 2
-    [0.0, 12.0],   # Nodo 3
+    [12.0, 0.0],   # Nodo 3
     [0.0, 6.0]    # Nodo 4
 ])
 # Desplazamientos globales u = [ux1, uy1, ux2, uy2, ux3, uy3, ux4, uy4]
-u = np.array([0, 3, 3, 0, 9, 0, 0, 9])
+u = np.array([3, 0, 9, 0, 0, 9, 0, 3])
 
 # Punto de evaluación en coordenadas naturales
 xi = -0.5862
