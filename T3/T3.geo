@@ -93,11 +93,11 @@ Physical Point(202) = {15};
 
 Physical Point(203) = {16};
 //+
-Transfinite Curve {1,22,28} = 50;
+Transfinite Curve {1,22,28} = 60;
 //+
-Transfinite Curve {28,21,8,31} = 50;
+Transfinite Curve {28,21,8,31} = 60;
 //+
-Transfinite Curve {27,16,20} = 50 ;
+Transfinite Curve {27,16,20} = 60 ;
 //+
 Transfinite Curve {27,31,9,19} = 50 ;
 
