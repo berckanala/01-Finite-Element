@@ -12,6 +12,10 @@ class Node:
         
         # Get the indices for the node, python count from 0
         self.idx=self._indices()
+
+
+        def _indices(self):
+            return [self.name * 2, self.name * 2 + 1]
         
         # Define the nodal load during the instantiation
         if nodalLoad is not None:

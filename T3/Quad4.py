@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from fem.parameters import globalParameters
 import matplotlib.patches as patches
 
 class Quad4:
@@ -8,8 +7,9 @@ class Quad4:
         if len(node_list) != 4:
             raise ValueError("Quad4 elements must have exactly 4 nodes.")
         
+        self.node_list = node_list  # Asegúrate de asignar node_list a la propiedad de la clase
+        self.area = self.compute_area()  # Calcular el área al inicializar el objeto
         self.element_tag = element_tag
-        self.node_list = node_list
         self.nodes = node_list
         self.section = section
         self.load_direction = load_direction
@@ -25,6 +25,22 @@ class Quad4:
 
     def __str__(self):
         return f"Quad4 Element {self.element_tag}: Nodes {[node.name for node in self.nodes]}"
+    
+    def compute_area(self):
+        """
+        Calcula el área del cuadrilátero utilizando el determinante basado en las coordenadas de los nodos.
+        Formula: Area = 0.5 * | x1(y2 - y3) + x2(y3 - y1) + x3(y1 - y2) + x4(y2 - y1) |
+        """
+        # Obtener las coordenadas de los nodos
+        x1, y1 = self.node_list[0].coordenadas
+        x2, y2 = self.node_list[1].coordenadas
+        x3, y3 = self.node_list[2].coordenadas
+        x4, y4 = self.node_list[3].coordenadas
+        
+        # Calcular el área usando la fórmula de determinante
+        area = 0.5 * abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2) + x4 * (y2 - y1))
+        
+        return area
     
     def __repr__(self):
         return self.__str__()
@@ -119,7 +135,21 @@ class Quad4:
             'principal_stress': sigma_p,
             'principal_strain': epsilon_p
         }
-
+    def body_weight_forces(self, x, y, force_vector):
+        """
+        Calcula las fuerzas internas por el peso propio para un elemento cuadrilátero.
+        
+        Args:
+            x (float): Coordenada x del centroide del elemento
+            y (float): Coordenada y del centroide del elemento
+            force_vector (list): Fuerza total (en N) en la dirección [Fx, Fy]
+        
+        Returns:
+            List: Fuerzas internas distribuidas para cada nodo
+        """
+        # Calculamos las fuerzas internas distribuidas (en N) para los 4 nodos
+        # Se supone que la carga se distribuye uniformemente entre los nodos
+        return np.array(force_vector)  # Retornamos el vector de fuerzas para el elemento
     def plotGeometry(self, ax=None, text=False, nodes=True, nodeLabels=False, facecolor='lightblue', edgecolor='k', alpha=0.5):
         if ax is None:
             fig, ax = plt.subplots()

@@ -1,10 +1,7 @@
 SetFactory("OpenCASCADE");
 
 // Parámetros opcionales (no usados directamente en Gmsh)
-n_fino = 15;
-n_medio = 10;
-n_latt=400;
-n_latb=100;
+n_fino = 5;
 
 
 // =================
@@ -42,6 +39,8 @@ Line(31) = {8,1};
 // Curve Loops (cerrados correctamente)
 // ============================
 
+
+
 Curve Loop(105) = {1, 2, 24, -28};
 Plane Surface(105) = {105};
 
@@ -58,31 +57,25 @@ Plane Surface(108) = {108};
 // Transfinite curves
 // ============================
 
-// Asigna nodos consistentes en todas las curvas transfinita
-Transfinite Curve {2,28,7} = n_fino;  // Refinado para las curvas exteriores
-
-Transfinite Curve {3,30,6} = n_medio;  // Refinado para la parte inferior
-Transfinite Curve {31,23,5} = n_latt;  // Refinado para la parte lateral
-Transfinite Curve {1,24,4} = n_latb;  // Refinado para la parte lateral
-
+Transfinite Curve {1, 2, 3, 4, 5, 6, 7, 23, 24, 28, 30, 31} = n_fino;
 
 // ============================
 // Transfinite surfaces y recombinación
 // ============================
 
 Transfinite Surface {105, 106, 107, 108};
-Recombine Surface {105, 106, 107, 108};
+
 
 // =============================
 // PHYSICAL GROUPS
 // =============================
 
 // Grupo físico de todas las superficies de acero
-Physical Surface("Steel1", 201) = {105, 108};
-Physical Surface("Steel2", 202) = {107,106};
+Physical Surface("Steel", 201) = {105, 106, 107, 108};
 
 // Grupo físico de curvas de borde para condiciones (por ejemplo, carga o apoyo)
 Physical Curve("BC_1", 123) = {4, 5};  // Ajustado: solo curvas válidas existentes
 
 // Apoyos puntuales
-Physical Curve("BC_R1", 203) = {31};  // Nodo superior izquierdo
+Physical Curve("BC_R1", 202) = {31};  // Nodo superior izquierdo
+
