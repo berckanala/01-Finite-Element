@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Stress Analysis (Part B)}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Results}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Quad4 Elements}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Quad9 Elements}{5}{subsubsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.3}Results Summary and Discussion }{7}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Design Modification and Stress Redistribution (Part C)}{8}{section.2}%
+\contentsline {section}{\numberline {3}Summary Essay (Part D)}{10}{section.3}%
