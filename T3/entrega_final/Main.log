@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  26 MAY 2025 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  26 MAY 2025 13:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,47 +647,94 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 54.
 Package hyperref Info: Option `breaklinks' set `true' on input line 54.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 77.
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks51
+\t@pgfplots@tokb=\toks52
+\t@pgfplots@tokc=\toks53
+\pgfplots@tmpa=\dimen323
+\c@pgfplots@coordindex=\count340
+\c@pgfplots@scanlineindex=\count341
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks54
+\t@pgf@tokb=\toks55
+\t@pgf@tokc=\toks56
+(C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count342
+) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count343
+\t@pgfplotstable@a=\toks57
+) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count344
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen324
+\pgfdecoratedremainingdistance=\dimen325
+\pgfdecoratedinputsegmentcompleteddistance=\dimen326
+\pgfdecoratedinputsegmentremainingdistance=\dimen327
+\pgf@decorate@distancetomove=\dimen328
+\pgf@decorate@repeatstate=\count345
+\pgfdecorationsegmentamplitude=\dimen329
+\pgfdecorationsegmentlength=\dimen330
+)
+\tikz@lib@dec@box=\box74
+) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count346
+\pgfplots@xmin@reg=\dimen331
+\pgfplots@xmax@reg=\dimen332
+\pgfplots@ymin@reg=\dimen333
+\pgfplots@ymax@reg=\dimen334
+\pgfplots@zmin@reg=\dimen335
+\pgfplots@zmax@reg=\dimen336
+) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplotstable.sty (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing (1.18.1)
+ (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstable.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstable.coltype.code.tex)))
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 81.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count340
-\l__pdf_internal_box=\box74
+\l__color_backend_stack_int=\count347
+\l__pdf_internal_box=\box75
 ) (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen323
-\scratchbox=\box75
-\nofMPsegments=\count342
-\nofMParguments=\count343
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen324
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count348
+\scratchdimen=\dimen337
+\scratchbox=\box76
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen338
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks59
 ) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -698,19 +745,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 77.
-Package microtype Info: Applying patch `item' on input line 77.
-Package microtype Info: Applying patch `toc' on input line 77.
-Package microtype Info: Applying patch `eqnum' on input line 77.
-Package microtype Info: Applying patch `footnote' on input line 77.
-Package microtype Info: Applying patch `verbatim' on input line 77.
+LaTeX Info: Redefining \microtypecontext on input line 81.
+Package microtype Info: Applying patch `item' on input line 81.
+Package microtype Info: Applying patch `toc' on input line 81.
+Package microtype Info: Applying patch `eqnum' on input line 81.
+Package microtype Info: Applying patch `footnote' on input line 81.
+Package microtype Info: Applying patch `verbatim' on input line 81.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 77.
+LaTeX Info: Redefining \showhyphens on input line 81.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -751,15 +798,18 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 77.
+Package hyperref Info: Link coloring ON on input line 81.
 (Main.out) (Main.out)
 \@outlinefile=\write4
 \openout4 = `Main.out'.
 
+
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
 <LOGO_UNIVERSIDAD.jpg, id=38, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 82.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 86.
 (pdftex.def)             Requested size: 366.24527pt x 132.80438pt.
 
 
@@ -789,9 +839,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \newpage
+l.127 \newpage
                [1]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 132.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 136.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -803,7 +853,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 136.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 140.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -816,42 +866,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 \newpage
+l.140 \newpage
                [1]
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--143
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
 <../resultados/Quad_4_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png, id=64, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_4_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 151.
+Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 155.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 <../resultados/Quad_4_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png, id=66, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_4_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 158.
+Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 162.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_4_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png, id=67, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_4_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 168.
+Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 172.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_4_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png, id=68, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_4_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 175.
+Package pdftex.def Info: ../resultados/Quad_4_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 179.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 180.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 184.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -864,28 +914,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <../resultados/Quad_4_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png, id=76, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_4_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 185.
+Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 189.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_4_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png, id=77, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_4_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 192.
+Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 196.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_4_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png, id=78, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_4_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 202.
+Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 206.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 <../resultados/Quad_4_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png, id=79, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_4_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_4_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 209.
+Package pdftex.def Info: ../resultados/Quad_4_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 213.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 214.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 218.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -898,7 +948,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 215.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 219.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -911,38 +961,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <../resultados/Quad_9_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png, id=97, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_9_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 222.
+Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 226.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 <../resultados/Quad_9_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png, id=98, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_9_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 229.
+Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 233.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_9_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png, id=99, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_9_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 239.
+Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 243.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_9_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png, id=100, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_9_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 246.
+Package pdftex.def Info: ../resultados/Quad_9_Global_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 250.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png, id=101, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 256.
+Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png  used on input line 260.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 <../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png, id=102, 562.0197pt x 570.933pt>
 File: ../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 263.
+Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png  used on input line 267.
 (pdftex.def)             Requested size: 219.74437pt x 223.22923pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 268.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 272.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -955,18 +1005,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png, id=114, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 273.
+Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png  used on input line 277.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 <../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png, id=115, 562.2606pt x 570.933pt>
 File: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 280.
+Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 284.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 286.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 290.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -976,10 +1026,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [6 <../resultados/Quad_9_Local_refinement_case_1_-_Maximum_Principal_Stress_σ1.png> <../resultados/Quad_9_Local_refinement_case_2_-_Maximum_Principal_Stress_σ1.png> <../resultados/Quad_9_Local_refinement_case_3_-_Maximum_Principal_Stress_σ1.png> <../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>]
+Overfull \hbox (23.56421pt too wide) in paragraph at lines 421--422
+ [][] 
+ []
+
+
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 369.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 425.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -989,25 +1044,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [7]
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 430.
+(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 45.84833pt, for example:
+(fancyhdr)                \setlength{\headheight}{45.84833pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
+
+[8]
 File: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 378.
+Package pdftex.def Info: ../resultados/Quad_9_Local_refinement_case_4_-_Maximum_Principal_Stress_σ1.png  used on input line 439.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
-<../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png, id=134, 562.2606pt x 570.933pt>
+<../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png, id=140, 562.2606pt x 570.933pt>
 File: ../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png Graphic file (type png)
 <use ../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png>
-Package pdftex.def Info: ../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png  used on input line 385.
+Package pdftex.def Info: ../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png  used on input line 446.
 (pdftex.def)             Requested size: 219.74437pt x 223.13339pt.
-<image.png, id=135, 732.93825pt x 601.0455pt>
+<image.png, id=141, 732.93825pt x 601.0455pt>
 File: image.png Graphic file (type png)
 <use image.png>
-Package pdftex.def Info: image.png  used on input line 399.
+Package pdftex.def Info: image.png  used on input line 460.
 (pdftex.def)             Requested size: 228.90242pt x 187.70702pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 403.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 464.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1016,11 +1084,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
-[8 <../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png>]
+[9 <../resultados/Perfil_optimizado_-_Maximum_Principal_Stress_σ1.png>]
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 404.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 465.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1029,8 +1097,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
-[9 <./image.png>]
-Overfull \hbox (1.45862pt too wide) in paragraph at lines 411--412
+[10 <./image.png>]
+Overfull \hbox (1.45862pt too wide) in paragraph at lines 472--473
 \OT1/ptm/m/n/12 (-20) coun-ter-in-tu-itive, this mod-i-fi-ca-tion ef-fec-tively re-duced the max-i-mum prin-ci-pal stress. By in-creas-ing
  []
 
@@ -1038,7 +1106,7 @@ Overfull \hbox (1.45862pt too wide) in paragraph at lines 411--412
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 415.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 476.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1047,7 +1115,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
-[10] 
+[11] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (Main.aux)
  ***********
@@ -1059,20 +1127,20 @@ Package rerunfilecheck Info: File `Main.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 124 (\begingroup)
+### semi simple group (level 1) entered at line 128 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26068 strings out of 473899
- 488659 string characters out of 5726501
- 1942960 words of memory out of 5000000
- 48345 multiletter control sequences out of 15000+600000
- 576716 words of font info for 135 fonts, out of 8000000 for 9000
+ 37051 strings out of 473899
+ 861645 string characters out of 5726501
+ 1947960 words of memory out of 5000000
+ 59173 multiletter control sequences out of 15000+600000
+ 576954 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,93p,1102b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Main.pdf (12 pages, 2643486 bytes).
+ 84i,19n,93p,1102b,2345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on Main.pdf (13 pages, 2656961 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  28844 words of extra memory for PDF output out of 29859 (max. 10000000)
 

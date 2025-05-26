@@ -53,6 +53,10 @@
     urlcolor=blue
 }
 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Asegúrate de tener una versión compatible
+\usepackage{pgfplotstable}
+
 % ============================
 % DEFINICIONES
 % ============================
@@ -360,8 +364,65 @@ Quad9 & 4 & 358.17 \\
 \end{minipage}
 \end{table}
 
-In the case of Quad9 elements, the maximum principal stress values demonstrate a smooth and consistent convergence trend as the mesh is refined. Local refinement leads to slightly lower stress values than global refinement, particularly in the finer mesh cases, indicating improved accuracy around stress concentration zones.
-\\
+In the case of Quad9 elements, the maximum principal stress values demonstrate consistent convergence trend as the mesh is refined. Local refinement leads to slightly lower stress values than global refinement, particularly in the finer mesh cases, indicating improved accuracy around stress concentration zones.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+    \begin{axis}[
+        width=13cm,
+        height=8cm,
+        xlabel={Case Number},
+        ylabel={Max $\sigma_1$ [MPa]},
+        title={Maximum Principal Stress per Case},
+        legend style={at={(1.05,1)}, anchor=north west},
+        xtick={1,2,3,4},
+        grid=both,
+        ymin=320, ymax=390
+    ]
+
+    % Quad4 Global
+    \addplot[line width=1.2pt, color=blue, mark=*] coordinates {
+        (1, 353.84)
+        (2, 359.28)
+        (3, 375.95)
+        (4, 375.71)
+    };
+    \addlegendentry{Quad4 Global}
+
+    % Quad4 Local
+    \addplot[line width=1.2pt, color=green, mark=triangle*] coordinates {
+        (1, 330.87)
+        (2, 338.38)
+        (3, 355.20)
+        (4, 358.17)
+    };
+    \addlegendentry{Quad4 Local}
+
+    % Quad9 Global
+    \addplot[color=red, mark=square*] coordinates {
+        (1, 353.83)
+        (2, 359.28)
+        (3, 375.94)
+        (4, 375.71)
+    };
+    \addlegendentry{Quad9 Global}
+
+    % Quad9 Local
+    \addplot[color=orange, mark=diamond*] coordinates {
+        (1, 330.86)
+        (2, 338.38)
+        (3, 355.20)
+        (4, 358.17)
+    };
+    \addlegendentry{Quad9 Local}
+
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Maximum principal stress for each refinement case and element type}
+    \label{fig:max_stress_comparison}
+\end{figure}
+
 When comparing the results from Quad4 and Quad9 elements, it is evident that both types are capable of capturing the overall behavior of the principal stress distribution. However, Quad9 elements, being higher-order, exhibit smoother and more accurate convergence, especially in regions of stress concentration. They can deliver more precise results with fewer elements, making them computationally efficient when combined with properly applied local mesh refinement.
 
 On the other hand, Quad4 elements are simpler and require less computational effort per element, making them suitable for preliminary analyses or when resources are limited. However, their accuracy relies more heavily on mesh density, and they benefit significantly from local refinement near critical areas.
