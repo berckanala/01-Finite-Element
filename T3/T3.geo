@@ -1,10 +1,10 @@
 SetFactory("OpenCASCADE");
 
 // Parámetros opcionales (no usados directamente en Gmsh)
-n_fino = 5;
-n_medio = 5;
-n_latt=5;
-n_latb=5;
+n_fino = 15;
+n_medio = 10;
+n_latt=40;
+n_latb=10;
 
 
 // =================
