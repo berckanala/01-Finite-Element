@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1748279672.01942 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T3/entrega_final/Main.tex" "Main.pdf" "Main" 1748279679.21961 0
+["pdflatex"] 1748295114.34613 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T3/entrega_final/Main.tex" "Main.pdf" "Main" 1748295128.56439 0
   "C:/Users/pedro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1742993668 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/pedro/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723153580 24265332 a4623d99dbd220d0e817d27477adcb5a ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -234,11 +234,11 @@
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "LOGO_UNIVERSIDAD.jpg" 1748273681 209820 2134e729a4493a99d3d34c719af1eecf ""
-  "Main.aux" 1748279678 7496 fcce441e183c7440f031d9ca2fd5f557 "pdflatex"
-  "Main.out" 1748279678 1396 b453fbdc107e793769b95e020c72f817 "pdflatex"
-  "Main.tex" 1748279671 19163 6833edba6d20875ae96368305e956096 ""
-  "Main.toc" 1748279678 697 368baab226fed3344674d853ced90037 "pdflatex"
-  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T3/entrega_final/Main.tex" 1748279671 19163 6833edba6d20875ae96368305e956096 ""
+  "Main.aux" 1748295128 7830 f5ffb6a24a30e50584d6c8cb6291d5e3 "pdflatex"
+  "Main.out" 1748295128 2051 4608c6616893f9dd6e5b447cf50a809e "pdflatex"
+  "Main.tex" 1748295101 19437 49be81f5205b4be3cc4915f3cba2dd17 ""
+  "Main.toc" 1748295128 947 f0597870bdecafdc3554605e60d960fb "pdflatex"
+  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T3/entrega_final/Main.tex" 1748295101 19437 49be81f5205b4be3cc4915f3cba2dd17 ""
   "image.png" 1748277735 53076 e51e791776a88fab50660184a8b09bcc ""
   (generated)
   "Main.aux"

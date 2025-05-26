@@ -144,9 +144,10 @@ The code and data for this project are available on GitHub at the following link
 This study uses the finite element method to analyze maximum principal stresses in a part with a stress concentration. Four mesh sizes, two refinement strategies (global and local), and two element types (Quad4 and Quad9) are compared, resulting in 16 simulations. The goal is to evaluate how these factors affect stress distribution, particularly near the critical region, and to observe convergence with mesh refinement.
 \\
 \\
+\newpage
 \subsection{Results}
 
-\subsubsection{Quad4 Elements}
+\subsubsection{Quad4 global refinement elements}
 
 \begin{figure}[H]
     \centering
@@ -182,6 +183,8 @@ This study uses the finite element method to analyze maximum principal stresses 
     \end{minipage}
 \end{figure}
 
+\newpage
+\subsubsection{Quad4 local refinement elements}
 \begin{figure}[H]
     \centering
     \begin{minipage}{0.48\textwidth}
@@ -217,7 +220,7 @@ This study uses the finite element method to analyze maximum principal stresses 
 \end{figure}
 
 \newpage
-\subsubsection{Quad9 Elements}
+\subsubsection{Quad9 global refinement elements}
 
 \begin{figure}[H]
     \centering
@@ -252,6 +255,9 @@ This study uses the finite element method to analyze maximum principal stresses 
         \label{fig:quad9_results_global4}
     \end{minipage}
 \end{figure}
+
+\newpage
+\subsubsection{Quad9 local refinement elements}
 
 \begin{figure}[H]
     \centering
@@ -430,7 +436,22 @@ On the other hand, Quad4 elements are simpler and require less computational eff
 \newpage
 \section{Design Modification and Stress Redistribution (Part C)}
 
-The following shows the stresses obtained from the 9L4 model (Quad9, local refinement, case 4), which was used for the profile modification. This includes both the original and the modified cases.
+For us to optimize the stresses of the profile, first we divided the section in two parts, Steel 1 and Steel 2. Steel 1 is the part closer to the supports (left side of the figure), while Steel 2 is the part farther away from them (right side of the figure). The sections can be seen i the following figure:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{image.png}
+    \caption{Gmsh of the profile}
+    \label{fig:modified_profile_stress}
+\end{figure}
+
+To improve its performance, we modified the cross section by reducing 5\% of the material from the region Steel 1 and redistributing it to Steel 2. Although this approach may initially seem counterintuitive, it increases the mass of the outer region, generating a greater moment due to the self-weight, which pushes the profile downward.
+
+Since the applied force tends to lift the profile upward, this redistribution acts as a counterbalance, reducing the upward deflection and stabilizing the system. As a result, the internal stresses are reduced. This modification was analyzed using the 9L4 model to ensure accurate results.
+
+\newpage
+
+The following figures shows the stresses obtained from the 9L4 model (Quad9, local refinement, case 4), which was used for the profile modification. This includes both the original and the modified cases.
 
 \begin{figure}[H]
     \centering
@@ -451,16 +472,7 @@ The following shows the stresses obtained from the 9L4 model (Quad9, local refin
 
 In this case, the maximum principal stress in the original configuration is 358.17 MPa, while in the modified configuration it is 355.41 MPa, showing a reduction of approximately 3 MPa.
 
-The profile is directly supported at its ends. To improve its performance, we modified the cross section by reducing 5\% of the material from the region located directly above the supports and redistributing it to the area farther away from them. Although this approach may initially seem counterintuitive, it increases the stiffness of the outer region, generating a greater moment due to the self-weight, which pushes the profile downward.
 
-Since the applied force tends to lift the profile upward, this redistribution acts as a counterbalance, reducing the upward deflection and stabilizing the system. As a result, the internal stresses are reduced. In the model, Steel 2 refers to the portion farther from the supports, while Steel 1 refers to the portion closer to them. This modification was analyzed using the 9L4 model to ensure accurate results.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{image.png}
-    \caption{Gmsh of the profile}
-    \label{fig:modified_profile_stress}
-\end{figure}
 
 \newpage
 \section{Summary Essay (Part D)}
