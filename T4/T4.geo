@@ -16,24 +16,30 @@ Point(4)  = {0,1,0,1};
 // =================
 // Definición de líneas
 // =================
-Line(1)  = {1,2};  // inferior
-Line(2)  = {2,3};  // derecha
-Line(3)  = {3,4};  // superior
-Line(4)  = {4,1};  // izquierda
+Line(10)  = {1,2};  // inferior
+Line(20)  = {2,3};  // derecha
+Line(30)  = {3,4};  // superior
+Line(40)  = {4,1};  // izquierda
 
 // ============================
 // Curve Loops y Superficie
 // ============================
-Curve Loop(105) = {4,3,2,1};
+Curve Loop(105) = {40,30,20,10};
 Plane Surface(105) = {105};
 
 // Aplicar transfinite con progresión geométrica
-Transfinite Curve {4} = n_fino Using Progression 1/r;
-Transfinite Curve {2} = n_fino Using Progression r;  // Inversa para que coincida bien con la malla
+Transfinite Curve {40} = n_fino Using Progression 1/r;
+Transfinite Curve {20} = n_fino Using Progression r;  // Inversa para que coincida bien con la malla
 
-Transfinite Curve {3} = n_fino Using Progression 1/r;
-Transfinite Curve {1} = n_fino Using Progression r;  // Inversa para que coincida bien con la malla
+Transfinite Curve {30} = n_fino Using Progression 1/r;
+Transfinite Curve {10} = n_fino Using Progression r;  // Inversa para que coincida bien con la malla
 
 // Superficie estructurada
 Transfinite Surface {105};
 
+Physical Surface("Omega") = {105};
+
+Physical Line("1") = {1};
+Physical Line("2") = {2};
+Physical Line("3") = {3};
+Physical Line("4") = {4};

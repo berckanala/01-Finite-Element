@@ -8,10 +8,6 @@ class CST:
     def __init__(self, 
                  element_tag: int, 
                  node_list: list, 
-                 section: object, 
-                 load_direction=None,
-                 material=None,
-                 type: str = 'planeStress',
                  print_summary=False):
         """
         Initialize the CST element with nodes, section properties, and optional load direction.
@@ -29,8 +25,6 @@ class CST:
         self.element_tag = element_tag
         self.node_list = node_list
         self.nodes = node_list
-        self.section = section
-        self.load_direction = load_direction
         self.type = type
 
         self.compute_area()
@@ -158,144 +152,14 @@ class CST:
         Returns:
             Ke (6x6 np.array): Local stiffness matrix
         """
-        D = self.section.get_Emat(self.type)
+        D = np.identity(3)
         B = self.get_B_matrix()
         t = self.section.thickness
 
         Ke = B.T @ D @ B * self.area * t
         return Ke
 
-    def get_body_forces(self):
-        """
-        Computes the equivalent nodal body force vector using 1-point integration
-        at the centroid of the triangular element.
-
-        Returns:
-            fb (np.ndarray): 6x1 body force vector (flattened)
-        """
-        if self.load_direction is None:
-            return np.zeros(6)
-
-        bx, by = self.load_direction
-        t = self.section.thickness
-        A = self.area
-        f_local = (t * A / 3) * np.array([bx, by, bx, by, bx, by])
-
-        return f_local
     
-    def body_weight_forces(self, x, y, force_vector):
-              
-        N = self.get_interpolation_matrix(x, y)
-        fx, fy = force_vector
-        f_puntual = (N.T @ np.array([fx, fy])).flatten()
-
-        # Guardar para graficar
-        self.body_point = (x, y)
-        self.body_vector = (fx, fy)
-        return f_puntual
-    
-    def get_element_displacements(self, u):
-        """
-        Extracts the element displacement vector from global displacements.
-
-        Args:
-            u (np.array): Global displacement vector
-
-        Returns:
-            ue (np.array): Element displacement vector
-        """
-        ue = u[self.idx]
-        return ue
-
-    def get_element_strains(self, u):
-        """
-        Computes the strain vector for the element.
-
-        Args:
-            u (np.array): Global displacement vector
-
-        Returns:
-            epsilon_e (np.array): Strain vector (3x1)
-            ue (np.array): Element displacement vector (6x1)
-        """
-        ue = self.get_element_displacements(u)
-        epsilon_e = self.get_B_matrix() @ ue
-        return epsilon_e, ue
-
-    def get_element_stress(self, u):
-        """
-        Computes the stress vector for the element.
-
-        Args:
-            u (np.array): Global displacement vector
-
-        Returns:
-            sigma_e (np.array): Stress vector (3x1)
-            epsilon_e (np.array): Strain vector (3x1)
-            ue (np.array): Element displacement vector (6x1)
-        """
-        epsilon_e, ue = self.get_element_strains(u)
-        sigma_e = self.section.material.get_Emat(self.type) @ epsilon_e
-        return sigma_e, epsilon_e, ue
-    
-    def calculate_principal_stress(self, sigma):
-        
-        sx=sigma[0]
-        sy=sigma[1]
-        sxy=sigma[2]
-        
-        stress_matrix = np.array([[sx, sxy],
-                                  [sxy, sy]])
-
-        # Diagonalize the stress matrix
-        eigenvalues, eigenvectors = np.linalg.eig(stress_matrix)
-
-        # Sort eigenvalues and eigenvectors
-        sorted_indices = np.argsort(eigenvalues)[::-1]  # Sort in descending order
-        eigenvalues = eigenvalues[sorted_indices]
-        eigenvectors = eigenvectors[:, sorted_indices]
-
-        # Principal stresses are the eigenvalues
-        sigma1, sigma2 = eigenvalues
-        
-        return np.array([sigma1,sigma2])
-    
-    def calculate_principal_strain(self, epsilon):
-        
-        ex=epsilon[0]
-        ey=epsilon[1]
-        exy=epsilon[2]
-        
-        strain_matrix = np.array([[ex, exy],
-                                  [exy, ey]])
-
-        # Diagonalize the stress matrix
-        eigenvalues, eigenvectors = np.linalg.eig(strain_matrix)
-
-        # Sort eigenvalues and eigenvectors
-        sorted_indices = np.argsort(eigenvalues)[::-1]  # Sort in descending order
-        eigenvalues = eigenvalues[sorted_indices]
-        eigenvectors = eigenvectors[:, sorted_indices]
-
-        # Principal stresses are the eigenvalues
-        epsilon1, epsilon2 = eigenvalues
-        
-        return np.array([epsilon1,epsilon2])
-
-    def get_element_internal_forces(self, u):
-        """
-        Computes internal nodal forces for the element.
-
-        Args:
-            u (np.array): Global displacement vector
-
-        Returns:
-            fe (np.array): Internal force vector (6x1)
-        """
-        ue = self.get_element_displacements(u)
-        fe = self.kg @ ue
-        return fe
-
     def get_results(self, u):
         """
         Computes and stores all element results:
