@@ -2,7 +2,6 @@ SetFactory("OpenCASCADE");
 
 // Parámetros de discretización
 n_fino  = 10;
-n_medio = 10;
 r       = 1.5;  // Razón de progresión geométrica
 
 // =================
@@ -39,7 +38,7 @@ Transfinite Surface {105};
 
 Physical Surface("Omega") = {105};
 
-Physical Line("1") = {10};
-Physical Line("2") = {20};
-Physical Line("3") = {30};
-Physical Line("4") = {40};
+Physical Line(1) = {10};
+Physical Line(2) = {20};
+Physical Line(3) = {30};
+Physical Line(4) = {40};
