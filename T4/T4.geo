@@ -3,7 +3,7 @@ SetFactory("OpenCASCADE");
 // Parámetros de discretización
 n_fino  = 10;
 n_medio = 10;
-r       = 1.3;  // Razón de progresión geométrica
+r       = 1.5;  // Razón de progresión geométrica
 
 // =================
 // Definición de puntos
@@ -39,7 +39,7 @@ Transfinite Surface {105};
 
 Physical Surface("Omega") = {105};
 
-Physical Line("1") = {1};
-Physical Line("2") = {2};
-Physical Line("3") = {3};
-Physical Line("4") = {4};
+Physical Line("1") = {10};
+Physical Line("2") = {20};
+Physical Line("3") = {30};
+Physical Line("4") = {40};
