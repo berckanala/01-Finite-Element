@@ -1,7 +1,7 @@
 SetFactory("OpenCASCADE");
 
 // Parámetros de discretización
-n_fino  = 10;
+n_fino  = 30;
 r       = 1.5;  // Razón de progresión geométrica
 
 // =================

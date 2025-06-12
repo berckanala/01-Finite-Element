@@ -25,9 +25,14 @@ class Pro_Solver:
         unused = [nid for nid in range(1, self.nnodes + 1) if node_uses[nid] == 0]
         if unused:
             print("⚠️ Nodos no conectados a ningún elemento:", unused)
-        for i, elem in enumerate(self.elements):
-            if len(set(elem.node_ids)) < len(elem.node_ids):
-                print(f"⚠️ Elemento {i+1} tiene nodos repetidos:", elem.node_ids)
+
+               
+    def compute_local_stiffness_matrices(self):
+        for i, element in enumerate(self.elements):
+            element.get_stiffness_matrix(self.nodes)
+            if element.detJ < 0:
+                element.K = np.zeros((6, 6))  # Evita que lo use
+
 
 
 
@@ -35,14 +40,6 @@ class Pro_Solver:
         for node in self.nodes:
             if hasattr(node, "boundary_label") and any("Dirichlet" in label for label in node.boundary_label):
                 node.solve_u(self.alpha)
-
-    def compute_local_stiffness_matrices(self):
-        for i, element in enumerate(self.elements):
-            element.get_stiffness_matrix(self.nodes)
-            if element.detJ < 0:
-                print(f"⚠️ Elemento {i+1} tiene Jacobiano singular o negativo (det = {element.detJ:.2e})")
-                element.K = np.zeros((6, 6))  # Evita que lo use
-            elif not np.any(element.
 
 
 

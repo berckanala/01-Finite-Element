@@ -1,0 +1,134 @@
+11
+
+CST:
+Máximo error relativo: 4.94e-01
+Promedio error relativo: 1.66e-01
+Mínimo error relativo: 0.00e+00
+
+LST:
+Máximo error relativo: 2.98e-05
+Promedio error relativo: 6.25e-06
+Mínimo error relativo: 0.00e+00
+
+12
+
+CST:
+Máximo error relativo: 4.83e-01
+Promedio error relativo: 1.14e-01
+Mínimo error relativo: 0.00e+00
+
+LST:
+Máximo error relativo: 2.64e-04
+Promedio error relativo: 2.42e-05
+Mínimo error relativo: 0.00e+00
+
+13
+
+CST
+Máximo error relativo: 4.30e-01
+Promedio error relativo: 7.23e-02
+Mínimo error relativo: 0.00e+00
+
+LST
+Máximo error relativo: 8.58e-04
+Promedio error relativo: 5.87e-05
+Mínimo error relativo: 0.00e+00
+
+
+21
+CST
+Máximo error relativo: 4.98e-01
+Promedio error relativo: 1.57e-01
+Mínimo error relativo: 0.00e+00
+
+
+LST
+Máximo error relativo: 9.11e-06
+Promedio error relativo: 8.98e-07
+Mínimo error relativo: 0.00e+00
+
+22
+
+CST:
+Máximo error relativo: 4.83e-01
+Promedio error relativo: 5.67e-02
+Mínimo error relativo: 0.00e+00
+
+LST:
+Máximo error relativo: 1.96e-04
+Promedio error relativo: 7.42e-06
+Mínimo error relativo: 0.00e+00
+
+23
+CST:
+Máximo error relativo: 4.33e-01
+Promedio error relativo: 2.45e-02
+Mínimo error relativo: 0.00e+00
+
+LST:
+Máximo error relativo: 7.87e-04
+Promedio error relativo: 1.67e-05
+Mínimo error relativo: 0.00e+00
+
+
+31
+
+CST
+
+Máximo error relativo: 4.96e-01
+Promedio error relativo: 1.26e-01
+Mínimo error relativo: 0.00e+00
+
+LST:
+
+Máximo error relativo: 6.38e-06
+Promedio error relativo: 4.07e-07
+Mínimo error relativo: 0.00e+00
+
+
+32
+CST
+
+Máximo error relativo: 4.83e-01
+Promedio error relativo: 2.78e-02
+Mínimo error relativo: 0.00e+00
+
+LST:
+Máximo error relativo: 1.92e-04
+Promedio error relativo: 3.51e-06
+Mínimo error relativo: 0.00e+00
+
+
+
+33
+
+
+CST
+Máximo error relativo: 4.33e-01
+Promedio error relativo: 1.10e-02
+Mínimo error relativo: 0.00e+00
+
+LST
+Máximo error relativo: 7.86e-04
+Promedio error relativo: 7.36e-06
+Mínimo error relativo: 0.00e+00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
