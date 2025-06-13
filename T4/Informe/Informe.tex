@@ -17,8 +17,10 @@
 \usepackage{booktabs} % Mejor estilo para tablas
 \usepackage{multirow} % Combinar filas en tablas
 \usepackage{diagbox}  % Crear diagonales en tablas
-\usepackage{subfig}   % Subfiguras
+\usepackage{subcaption}   % Subfiguras modernas
 \usepackage{caption}  % Personalizar leyendas
+\usepackage{multirow}
+
 
 % --- Tipografía y Formato ---
 \usepackage{times}       % Fuente Times New Roman
@@ -271,12 +273,270 @@ This means that the Galerkin solution \( u_h \) is quasi-optimal: it is, up to a
 \newpage
 \section{Results}
 
-In this section, we present the results obtained from the numerical solution of the Poisson equation using the finite element method (FEM) with triangular linear (CST) and quadratic (LST) elements.
+In this section, we present the results for the error obtained from the numerical solution of the Poisson equation using the finite element method (FEM) with triangular linear (CST) and quadratic (LST) elements.
 
 \subsection{CST Elements}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/11/CST_relative_error_colormap.png}
+        \caption{CST error (N = 10, r = 1.1)}
+        \label{fig:cst_error_r1.1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/12/CST_relative_error_colormap.png}
+        \caption{CST error (N = 10, r = 1.2)}
+        \label{fig:cst_error_r1.2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/13/CST_relative_error_colormap.png}
+        \caption{CST error (N = 10, r = 1.3)}
+        \label{fig:cst_error_r1.3}
+    \end{subfigure}
+    \caption{Relative error for CST elements with $N = 10$ and different values of $r$.}
+    \label{fig:cst_error_comparison}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/21/CST_relative_error_colormap.png}
+        \caption{CST error (N = 20, r = 1.1)}
+        \label{fig:cst_error_r1.1_n20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/22/CST_relative_error_colormap.png}
+        \caption{CST error (N = 20, r = 1.2)}
+        \label{fig:cst_error_r1.2_n20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/23/CST_relative_error_colormap.png}
+        \caption{CST error (N = 20, r = 1.3)}
+        \label{fig:cst_error_r1.3_n20}
+    \end{subfigure}
+    \caption{Relative error for CST elements with $N = 20$ and different values of $r$.}
+    \label{fig:cst_error_comparison_n20}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/31/CST_relative_error_colormap.png}
+        \caption{CST error (N = 30, r = 1.1)}
+        \label{fig:cst_error_r1.1_n30}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/32/CST_relative_error_colormap.png}
+        \caption{CST error (N = 30, r = 1.2)}
+        \label{fig:cst_error_r1.2_n30}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/33/CST_relative_error_colormap.png}
+        \caption{CST error (N = 30, r = 1.3)}
+        \label{fig:cst_error_r1.3_n30}
+    \end{subfigure}
+    \caption{Relative error for CST elements with $N = 30$ and different values of $r$.}
+    \label{fig:cst_error_comparison_n30}
+\end{figure}
+
+
+\subsection{LST Elements}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/11/LST_relative_error_colormap.png}
+        \caption{LST error (N = 10, r = 1.1)}
+        \label{fig:lst_error_r1.1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/12/LST_relative_error_colormap.png}
+        \caption{LST error (N = 10, r = 1.2)}
+        \label{fig:lst_error_r1.2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/13/LST_relative_error_colormap.png}
+        \caption{LST error (N = 10, r = 1.3)}
+        \label{fig:lst_error_r1.3}
+    \end{subfigure}
+    \caption{Relative error for LST elements with $N = 10$ and different values of $r$.}
+    \label{fig:lst_error_comparison}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/21/LST_relative_error_colormap.png}
+        \caption{LST error (N = 20, r = 1.1)}
+        \label{fig:lst_error_r1.1_n20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/22/LST_relative_error_colormap.png}
+        \caption{LST error (N = 20, r = 1.2)}
+        \label{fig:lst_error_r1.2_n20}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/23/LST_relative_error_colormap.png}
+        \caption{LST error (N = 20, r = 1.3)}
+        \label{fig:lst_error_r1.3_n20}
+    \end{subfigure}
+    \caption{Relative error for LST elements with $N = 20$ and different values of $r$.}
+    \label{fig:lst_error_comparison_n20}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/31/LST_relative_error_colormap.png}
+        \caption{LST error (N = 30, r = 1.1)}
+        \label{fig:lst_error_r1.1_n30}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/32/LST_relative_error_colormap.png}
+        \caption{LST error (N = 30, r = 1.2)}
+        \label{fig:lst_error_r1.2_n30}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Graficos/33/LST_relative_error_colormap.png}
+        \caption{LST error (N = 30, r = 1.3)}
+        \label{fig:lst_error_r1.3_n30}
+    \end{subfigure}
+    \caption{Relative error for LST elements with $N = 30$ and different values of $r$.}
+    \label{fig:lst_error_comparison_n30}
+\end{figure}
+
+
+\subsection{Comparative Analysis}
+
+In the following tables, we summarize the relative errors obtained for both CST and LST elements across different values of $N$ (number of elements) and $r$ (refinement factor). The maximum, average, and minimum errors are presented to provide a comprehensive view of the performance of each element type.
+
+\begin{table}[H]
+\centering
+\caption{Relative errors for CST elements for different values of $N$ and $r$.}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{$N$} & \textbf{$r$} & \textbf{Max Error} & \textbf{Avg Error} & \textbf{Min Error} \\
+\hline
+\multirow{3}{*}{10}
+& 1.1 & 4.94e-01 & 1.66e-01 & 0.00e+00 \\
+& 1.2 & 4.83e-01 & 1.14e-01 & 0.00e+00 \\
+& 1.3 & 4.30e-01 & 7.23e-02 & 0.00e+00 \\
+\hline
+\multirow{3}{*}{20}
+& 1.1 & 4.98e-01 & 1.57e-01 & 0.00e+00 \\
+& 1.2 & 4.83e-01 & 5.67e-02 & 0.00e+00 \\
+& 1.3 & 4.33e-01 & 2.45e-02 & 0.00e+00 \\
+\hline
+\multirow{3}{*}{30}
+& 1.1 & 4.96e-01 & 1.26e-01 & 0.00e+00 \\
+& 1.2 & 4.83e-01 & 2.78e-02 & 0.00e+00 \\
+& 1.3 & 4.33e-01 & 1.10e-02 & 0.00e+00 \\
+\hline
+\end{tabular}
+\label{tab:cst_errors_refined}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Relative errors for LST elements for different values of $N$ and $r$.}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{$N$} & \textbf{$r$} & \textbf{Max Error} & \textbf{Avg Error} & \textbf{Min Error} \\
+\hline
+\multirow{3}{*}{10}
+& 1.1 & 2.98e-05 & 6.25e-06 & 0.00e+00 \\
+& 1.2 & 2.64e-04 & 2.42e-05 & 0.00e+00 \\
+& 1.3 & 8.58e-04 & 5.87e-05 & 0.00e+00 \\
+\hline
+\multirow{3}{*}{20}
+& 1.1 & 9.11e-06 & 8.98e-07 & 0.00e+00 \\
+& 1.2 & 1.96e-04 & 7.42e-06 & 0.00e+00 \\
+& 1.3 & 7.87e-04 & 1.67e-05 & 0.00e+00 \\
+\hline
+\multirow{3}{*}{30}
+& 1.1 & 6.38e-06 & 4.07e-07 & 0.00e+00 \\
+& 1.2 & 1.92e-04 & 3.51e-06 & 0.00e+00 \\
+& 1.3 & 7.86e-04 & 7.36e-06 & 0.00e+00 \\
+\hline
+\end{tabular}
+\label{tab:lst_errors_refined}
+\end{table}
+
+In the next table, we compare the average relative errors between CST and LST elements for different values of $N$ and $r$. This comparison highlights the performance differences between the two element types in terms of accuracy.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of average relative error between CST and LST elements, organized by $N$ and $r$.}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{$N$} & \textbf{$r$} & \textbf{Avg Error CST} & \textbf{Avg Error LST} \\
+\hline
+\multirow{3}{*}{10} 
+& 1.1 & 1.66e-01 & 6.25e-06 \\
+& 1.2 & 1.14e-01 & 2.42e-05 \\
+& 1.3 & 7.23e-02 & 5.87e-05 \\
+\hline
+\multirow{3}{*}{20} 
+& 1.1 & 1.57e-01 & 8.98e-07 \\
+& 1.2 & 5.67e-02 & 7.42e-06 \\
+& 1.3 & 2.45e-02 & 1.67e-05 \\
+\hline
+\multirow{3}{*}{30} 
+& 1.1 & 1.26e-01 & 4.07e-07 \\
+& 1.2 & 2.78e-02 & 3.51e-06 \\
+& 1.3 & 1.10e-02 & 7.36e-06 \\
+\hline
+\end{tabular}
+\label{tab:avg_error_comparison_refined}
+\end{table}
+
+Here, we observe that the average relative errors for CST elements are significantly higher than those for LST elements across all values of $N$ and $r$. This indicates that LST elements provide a more accurate approximation of the solution to the Poisson equation compared to CST elements, especially as the mesh is refined.
+
+
+\newpage
+\section{Conclusion}
+
+This study implemented and analyzed the finite element solution of the two-dimensional Poisson equation using both linear (CST) and quadratic (LST) triangular elements on geometrically refined unstructured meshes. The method was verified using the Method of Manufactured Solutions, allowing precise quantification of convergence behavior.
+
+The results confirm that increasing the number of subdivisions $N$ consistently reduces the relative error for both CST and LST elements. Moreover, LST elements showed significantly better accuracy compared to CST, often yielding errors several orders of magnitude lower for the same mesh resolution.
+
+However, it was also observed that the refinement parameter $r$ plays a more subtle role. While moderate values of $r$ can improve accuracy by concentrating nodes where the solution varies rapidly, excessive refinement (e.g., $r = 1.3$) led to distortions in element quality. This affected LST elements more strongly, as their quadratic nature makes them more sensitive to mesh shape and distribution. In some cases, the relative error of LST increased slightly when the mesh refinement was poorly aligned with the regions of greatest solution variation.
+
+In conclusion, LST elements provide superior accuracy and faster convergence, but their performance is highly dependent on mesh quality and proper refinement strategy. Careful tuning of the mesh parameters is essential to fully leverage the benefits of higher-order elements in finite element analysis.
+
 
 
 
 \end{document}
-
-
