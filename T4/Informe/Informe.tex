@@ -697,15 +697,12 @@ As shown in LST Figure, the average relative error for LST elements increases wi
 \newpage
 \section{Conclusion}
 
-This study implemented and analyzed the finite element solution of the two-dimensional Poisson equation using both linear (CST) and quadratic (LST) triangular elements on geometrically refined unstructured meshes. The method was verified using the Method of Manufactured Solutions, allowing precise quantification of convergence behavior.
+This study implemented and evaluated the finite element solution of the two-dimensional Poisson equation using both linear (CST) and quadratic (LST) triangular elements on geometrically refined unstructured meshes. The use of the Method of Manufactured Solutions (MMS) enabled precise error quantification and verification of convergence behavior.
 
-The results confirm that increasing the number of subdivisions $N$ consistently reduces the relative error for both CST and LST elements. Moreover, LST elements showed significantly better accuracy compared to CST, often yielding errors several orders of magnitude lower for the same mesh resolution.
+The results confirm that increasing the number of subdivisions $N$ consistently reduces the relative error for both element types. However, a significant performance difference was observed: LST elements yielded errors several orders of magnitude lower than CST elements for the same mesh resolution. This demonstrates the superior approximation capacity of quadratic elements.
 
-However, it was also observed that the refinement parameter $r$ plays a more subtle role. While moderate values of $r$ can improve accuracy by concentrating nodes where the solution varies rapidly, excessive refinement (e.g., $r = 1.3$) led to distortions in element quality. This affected LST elements more strongly, as their quadratic nature makes them more sensitive to mesh shape and distribution. In some cases, the relative error of LST increased slightly when the mesh refinement was poorly aligned with the regions of greatest solution variation.
+While moderate geometric refinement ($r$) helped improve accuracy by concentrating nodes in regions of high gradient, excessive refinement (e.g., $r = 1.3$) slightly increased the error in some LST cases due to degradation in element shape quality. This highlights that higher-order elements, although more accurate, are also more sensitive to mesh distortion.
 
-In conclusion, LST elements provide superior accuracy and faster convergence, but their performance is highly dependent on mesh quality and proper refinement strategy. Careful tuning of the mesh parameters is essential to fully leverage the benefits of higher-order elements in finite element analysis.
-
-
-
+In summary, LST elements offer superior accuracy and convergence when mesh quality is preserved. Effective mesh design and appropriate refinement strategies are critical to fully exploit the advantages of higher-order finite elements in solving elliptic PDEs.
 
 \end{document}

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1749845708.6929 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" "Informe.pdf" "Informe" 1749845722.67088 0
+["pdflatex"] 1749845891.6656 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" "Informe.pdf" "Informe" 1749845905.34177 0
   "C:/Users/pedro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1748714343 83609 ebbc432e6cbbb238d39535255db2c8bd ""
   "C:/Users/pedro/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723153580 24265332 a4623d99dbd220d0e817d27477adcb5a ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -266,13 +266,13 @@
   "Graficos/32/LST_relative_error_colormap.png" 1749760630 206617 4df414a45cd8c1ac81837da0037d8ffe ""
   "Graficos/33/CST_relative_error_colormap.png" 1749760630 144020 40a737f92f45ecd56a68c98e942e1518 ""
   "Graficos/33/LST_relative_error_colormap.png" 1749760630 180593 6a5085e2c1f985d89e72dcbfe43836a7 ""
-  "Informe.aux" 1749845722 9396 13bb386ed5c9afb0388e67e8c8f6b36b "pdflatex"
-  "Informe.out" 1749845722 1365 48e3983656f8a444b3285b90e05914a3 "pdflatex"
-  "Informe.tex" 1749845692 30535 268e79dd626936be6832ff648242942d ""
-  "Informe.toc" 1749845722 842 52c409316a8cefbd86cfa5896b3e3958 "pdflatex"
+  "Informe.aux" 1749845904 9396 13bb386ed5c9afb0388e67e8c8f6b36b "pdflatex"
+  "Informe.out" 1749845904 1365 48e3983656f8a444b3285b90e05914a3 "pdflatex"
+  "Informe.tex" 1749845878 30378 923fd45dd65651c70eb7e62555de32fc ""
+  "Informe.toc" 1749845904 842 52c409316a8cefbd86cfa5896b3e3958 "pdflatex"
   "LOGO_UNIVERSIDAD.jpg" 1748310571 209820 2134e729a4493a99d3d34c719af1eecf ""
   "LST_mesh.png" 1749831889 34453 d43b423d22a368a32f4ce5aaa8626e82 ""
-  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" 1749845692 30535 268e79dd626936be6832ff648242942d ""
+  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" 1749845878 30378 923fd45dd65651c70eb7e62555de32fc ""
   (generated)
   "Informe.aux"
   "Informe.log"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1123,15 +1123,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [13]
-Overfull \hbox (12.37149pt too wide) in paragraph at lines 706--707
-[]\OT1/ptm/m/n/12 (-20) In con-clu-sion, LST el-e-ments pro-vide su-pe-rior ac-cu-racy and faster con-ver-gence, but their per-for-mance
- []
-
-
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 711.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 708.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1156,14 +1151,14 @@ Package rerunfilecheck Info: File `Informe.out' has not changed.
 ### bottom level 
 Here is how much of TeX's memory you used:
  37191 strings out of 473899
- 860188 string characters out of 5726501
+ 860191 string characters out of 5726501
  1958960 words of memory out of 5000000
  59242 multiletter control sequences out of 15000+600000
  581896 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,93p,1099b,2341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Informe.pdf (16 pages, 2995261 bytes).
+Output written on Informe.pdf (16 pages, 2995054 bytes).
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
