@@ -4,8 +4,8 @@
 \contentsline {subsection}{\numberline {2.2}Weak Form}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Hilbert Spaces}{4}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Galerkin Method Analysis}{4}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Results}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}CST Elements}{6}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}LST Elements}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Comparative Analysis}{7}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Conclusion}{10}{section.4}%
+\contentsline {section}{\numberline {3}Results}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}CST Elements}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}LST Elements}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Comparative Analysis}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Conclusion}{13}{section.4}%

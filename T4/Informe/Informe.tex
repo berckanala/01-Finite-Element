@@ -153,7 +153,6 @@ Verification is carried out using the Method of Manufactured Solutions (MMS), co
 
 This section presents the mathematical formulation underlying the numerical solution of the Poisson equation with Dirichlet boundary conditions using the Finite Element Method (FEM). The derivation of the weak form, the construction of the finite element spaces, and the discretization process are detailed, providing the foundation for the implementation described in the following sections.
 
-
 \subsection{Strong Form}
 
 We consider the Poisson equation defined over a bounded domain $\Omega \subset \mathbb{R}^2$ with boundary $\partial \Omega$. The problem is given by:
@@ -270,10 +269,51 @@ Let \( u \in V \) be the exact solution of the weak formulation, and let \( u_h 
 This means that the Galerkin solution \( u_h \) is quasi-optimal: it is, up to a constant factor \( C / \alpha \), as close to the exact solution \( u \) as the best possible approximation in the finite element space \( V_h \). Therefore, the convergence of the method depends directly on the approximation properties of \( V_h \).
 
 
+\subsection*{A priori error estimates}
+
+One of the key results in finite element theory is the estimation of the approximation error in a suitable norm. For problems formulated in the Sobolev space \( H^1(\Omega) \), we are particularly interested in estimating the error between the exact solution \( u \) and its finite element approximation \( u_h \) in the \( H^1 \)-norm.
+
+\begin{equation}
+\| u - u_h \|_{H^1(\Omega)} \leq C h^m,
+\end{equation}
+
+where:
+\begin{itemize}
+    \item \( \| \cdot \|_{H^1(\Omega)} \) denotes the standard Sobolev norm, which includes both the \( L^2 \)-norm of the function and its first derivatives,
+    \item \( h \) represents the mesh size (the maximum diameter of the elements in the mesh),
+    \item \( m \) is the degree of the polynomial used in the finite element basis functions,
+    \item \( C \) is a constant independent of \( h \), but depending on the exact solution \( u \), the domain \( \Omega \), and the shape regularity of the mesh.
+\end{itemize}
+
+This inequality shows that the error in the \( H^1 \)-norm decreases at a rate proportional to \( h^m \). Hence, finer meshes (smaller \( h \)) or higher-order elements (larger \( m \)) lead to more accurate approximations of the exact solution, provided that the solution is smooth enough.
+
+
 \newpage
 \section{Results}
 
 In this section, we present the results for the error obtained from the numerical solution of the Poisson equation using the finite element method (FEM) with triangular linear (CST) and quadratic (LST) elements.
+
+
+In the following figures, we compare the meshes generated for the linear triangular elements (CST) and the quadratic triangular elements (LST). The CST elements are simpler and consist of three nodes per triangle, while the LST elements have six nodes, allowing for a more accurate representation of the solution.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{CST_mesh.png}
+        \caption{Mesh using CST elements.}
+        \label{fig:cst_mesh}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{LST_mesh.png}
+        \caption{Mesh using LST elements.}
+        \label{fig:lst_mesh}
+    \end{subfigure}
+    \caption{Comparison of the mesh for CST and LST finite elements.}
+    \label{fig:mesh_comparison}
+\end{figure}
 
 \subsection{CST Elements}
 
@@ -356,6 +396,8 @@ In this section, we present the results for the error obtained from the numerica
     \label{fig:cst_error_comparison_n30}
 \end{figure}
 
+The relative error in CST elements tends to concentrate in regions that are far from the boundary conditions and from the smaller elements of the mesh. This happens because, lacking intermediate nodes, CST elements have limited capacity to capture variations in the displacement field. As the distance increases from well-conditioned or refined zones, the accuracy of the linear interpolation deteriorates and the error increases. This can be observed in the relative error figures for CST, where the error remains higher near the corner with the largest elements (specifically, the upper right corner of our mesh).
+
 
 \subsection{LST Elements}
 
@@ -437,6 +479,7 @@ In this section, we present the results for the error obtained from the numerica
     \label{fig:lst_error_comparison_n30}
 \end{figure}
 
+For LST elements, a similar behavior is observed: the relative errors tend to be higher in the elements with the largest size, which are located in the upper right corner of the mesh. This region is also farther from the boundary conditions, which contributes to the accumulation of error. Despite the quadratic interpolation capabilities of LST elements, the lack of refinement in those zones leads to a reduction in accuracy, especially in capturing gradients of the solution. This pattern can be clearly seen in the figures displaying the relative error for LST elements.
 
 \subsection{Comparative Analysis}
 
@@ -523,6 +566,94 @@ In the next table, we compare the average relative errors between CST and LST el
 \end{table}
 
 Here, we observe that the average relative errors for CST elements are significantly higher than those for LST elements across all values of $N$ and $r$. This indicates that LST elements provide a more accurate approximation of the solution to the Poisson equation compared to CST elements, especially as the mesh is refined.
+
+In the following figures, we visualize the average relative errors for both CST and LST elements as a function of the refinement parameter $r$ for different values of $N$. This provides a clearer understanding of how the error behaves with respect to mesh refinement.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Average Relative Error for CST Elements},
+    xlabel={$r$},
+    ylabel={Avg Error},
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+    width=0.9\textwidth,
+    height=6cm
+]
+\addplot[color=blue, mark=*] coordinates {
+    (1.1, 0.166)
+    (1.2, 0.114)
+    (1.3, 0.0723)
+};
+\addlegendentry{$N = 10$}
+
+\addplot[color=red, mark=triangle*] coordinates {
+    (1.1, 0.157)
+    (1.2, 0.0567)
+    (1.3, 0.0245)
+};
+\addlegendentry{$N = 20$}
+
+\addplot[color=green!60!black, mark=square*] coordinates {
+    (1.1, 0.126)
+    (1.2, 0.0278)
+    (1.3, 0.0110)
+};
+\addlegendentry{$N = 30$}
+\end{axis}
+\end{tikzpicture}
+\caption{Average relative error for CST elements varying $r$ and $N$.}
+\label{fig:cst_avg_error_plot}
+\end{figure}
+
+In the case of CST elements, we observe that the average relative error decreases as the refinement parameter $r$ increases, indicating that finer meshes lead to more accurate solutions. However, the errors remain relatively high compared to LST elements.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Average Relative Error for LST Elements},
+    xlabel={$r$},
+    ylabel={Avg Error},
+    ymode=log,
+    legend pos=north east,
+    ymajorgrids=true,
+    grid style=dashed,
+    width=0.9\textwidth,
+    height=6cm
+]
+\addplot[color=blue, mark=*] coordinates {
+    (1.1, 6.25e-6)
+    (1.2, 2.42e-5)
+    (1.3, 5.87e-5)
+};
+\addlegendentry{$N = 10$}
+
+\addplot[color=red, mark=triangle*] coordinates {
+    (1.1, 8.98e-7)
+    (1.2, 7.42e-6)
+    (1.3, 1.67e-5)
+};
+\addlegendentry{$N = 20$}
+
+\addplot[color=green!60!black, mark=square*] coordinates {
+    (1.1, 4.07e-7)
+    (1.2, 3.51e-6)
+    (1.3, 7.36e-6)
+};
+\addlegendentry{$N = 30$}
+\end{axis}
+\end{tikzpicture}
+\caption{Average relative error for LST elements varying $r$ and $N$ (log scale).}
+\label{fig:lst_avg_error_plot}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent
+As shown in LST Figure, the average relative error for LST elements increases with larger values of $r$, indicating that sharper gradients reduce accuracy. However, increasing $N$ consistently decreases the error, demonstrating the convergence of the method. The use of a logarithmic scale highlights the high precision of LST elements, with errors significantly lower than those of CST elements.
+
 
 
 \newpage

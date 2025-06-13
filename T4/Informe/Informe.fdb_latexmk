@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1749792967.40779 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" "Informe.pdf" "Informe" 1749792974.14516 0
+["pdflatex"] 1749833184.3431 "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" "Informe.pdf" "Informe" 1749833197.79564 0
   "C:/Users/pedro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1748714343 83609 ebbc432e6cbbb238d39535255db2c8bd ""
   "C:/Users/pedro/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1723153580 24265332 a4623d99dbd220d0e817d27477adcb5a ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -243,6 +243,7 @@
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/tex/latex/tools/tabularx.sty" 1718356376 7243 e5dac1240636811edb77568b81818372 ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pedro/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
+  "CST_mesh.png" 1749831742 35945 b462f5fc6811a9342c6133ac98b632c3 ""
   "Graficos/11/CST_relative_error_colormap.png" 1749760630 145994 5f0dcec490060a897abb303f34d55043 ""
   "Graficos/11/LST_relative_error_colormap.png" 1749760630 203523 2e2478ffbc40d69e42011b906be67d0c ""
   "Graficos/12/CST_relative_error_colormap.png" 1749760630 146673 718759f0d0082d7b4d5d4d7c0f656412 ""
@@ -261,12 +262,13 @@
   "Graficos/32/LST_relative_error_colormap.png" 1749760630 206617 4df414a45cd8c1ac81837da0037d8ffe ""
   "Graficos/33/CST_relative_error_colormap.png" 1749760630 144020 40a737f92f45ecd56a68c98e942e1518 ""
   "Graficos/33/LST_relative_error_colormap.png" 1749760630 180593 6a5085e2c1f985d89e72dcbfe43836a7 ""
-  "Informe.aux" 1749792973 8097 82246880c748ee0df70ebdfc29a99824 "pdflatex"
-  "Informe.out" 1749792973 1365 48e3983656f8a444b3285b90e05914a3 "pdflatex"
-  "Informe.tex" 1749792966 22837 c63ad544b9bc9e801179f51c00548e5d ""
-  "Informe.toc" 1749792973 840 56f4f4da7d458d2026b8ea930cf3925b "pdflatex"
+  "Informe.aux" 1749833197 9363 c2690c4209258be1fb002ac86bb5688b "pdflatex"
+  "Informe.out" 1749833197 1365 48e3983656f8a444b3285b90e05914a3 "pdflatex"
+  "Informe.tex" 1749833168 28969 1d62b1457edca889190c7092c80785e8 ""
+  "Informe.toc" 1749833197 841 9c1f99bb4dabcc48e6b4b34d49c32550 "pdflatex"
   "LOGO_UNIVERSIDAD.jpg" 1748310571 209820 2134e729a4493a99d3d34c719af1eecf ""
-  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" 1749792966 22837 c63ad544b9bc9e801179f51c00548e5d ""
+  "LST_mesh.png" 1749831889 34453 d43b423d22a368a32f4ce5aaa8626e82 ""
+  "c:/Users/pedro/OneDrive/Escritorio/Finite Elements/Beño_Finite/01-Finite-Element/T4/Informe/Informe.tex" 1749833168 28969 1d62b1457edca889190c7092c80785e8 ""
   (generated)
   "Informe.aux"
   "Informe.log"
