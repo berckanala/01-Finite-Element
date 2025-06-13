@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -796,7 +796,7 @@ Package hyperref Info: Link coloring ON on input line 86.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-<LOGO_UNIVERSIDAD.jpg, id=50, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=58, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 91.
@@ -940,42 +940,42 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [7]
-<CST_mesh.png, id=142, 545.03625pt x 519.74174pt>
+<CST_mesh.png, id=150, 558.28575pt x 524.55975pt>
 File: CST_mesh.png Graphic file (type png)
 <use CST_mesh.png>
 Package pdftex.def Info: CST_mesh.png  used on input line 344.
-(pdftex.def)             Requested size: 206.01077pt x 196.44914pt.
-<LST_mesh.png, id=144, 534.19576pt x 524.55975pt>
+(pdftex.def)             Requested size: 206.01077pt x 193.5638pt.
+<LST_mesh.png, id=152, 534.19576pt x 524.55975pt>
 File: LST_mesh.png Graphic file (type png)
 <use LST_mesh.png>
 Package pdftex.def Info: LST_mesh.png  used on input line 351.
 (pdftex.def)             Requested size: 206.01077pt x 202.2963pt.
-<Graficos/11/CST_relative_error_colormap.png, id=145, 578.16pt x 433.62pt>
+<Graficos/11/CST_relative_error_colormap.png, id=153, 578.16pt x 433.62pt>
 File: Graficos/11/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/11/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/11/CST_relative_error_colormap.png  used on input line 365.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/12/CST_relative_error_colormap.png, id=146, 578.16pt x 433.62pt>
+<Graficos/12/CST_relative_error_colormap.png, id=154, 578.16pt x 433.62pt>
 File: Graficos/12/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/12/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/12/CST_relative_error_colormap.png  used on input line 372.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/13/CST_relative_error_colormap.png, id=147, 578.16pt x 433.62pt>
+<Graficos/13/CST_relative_error_colormap.png, id=155, 578.16pt x 433.62pt>
 File: Graficos/13/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/13/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/13/CST_relative_error_colormap.png  used on input line 379.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/21/CST_relative_error_colormap.png, id=148, 578.16pt x 433.62pt>
+<Graficos/21/CST_relative_error_colormap.png, id=156, 578.16pt x 433.62pt>
 File: Graficos/21/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/21/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/21/CST_relative_error_colormap.png  used on input line 391.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/22/CST_relative_error_colormap.png, id=149, 578.16pt x 433.62pt>
+<Graficos/22/CST_relative_error_colormap.png, id=157, 578.16pt x 433.62pt>
 File: Graficos/22/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/22/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/22/CST_relative_error_colormap.png  used on input line 398.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/23/CST_relative_error_colormap.png, id=150, 578.16pt x 433.62pt>
+<Graficos/23/CST_relative_error_colormap.png, id=158, 578.16pt x 433.62pt>
 File: Graficos/23/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/23/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/23/CST_relative_error_colormap.png  used on input line 405.
@@ -994,32 +994,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [8 <./CST_mesh.png> <./LST_mesh.png> <./Graficos/11/CST_relative_error_colormap.png> <./Graficos/12/CST_relative_error_colormap.png> <./Graficos/13/CST_relative_error_colormap.png>]
-<Graficos/31/CST_relative_error_colormap.png, id=162, 578.16pt x 433.62pt>
+<Graficos/31/CST_relative_error_colormap.png, id=170, 578.16pt x 433.62pt>
 File: Graficos/31/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/31/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/31/CST_relative_error_colormap.png  used on input line 418.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/32/CST_relative_error_colormap.png, id=163, 578.16pt x 433.62pt>
+<Graficos/32/CST_relative_error_colormap.png, id=171, 578.16pt x 433.62pt>
 File: Graficos/32/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/32/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/32/CST_relative_error_colormap.png  used on input line 425.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/33/CST_relative_error_colormap.png, id=164, 578.16pt x 433.62pt>
+<Graficos/33/CST_relative_error_colormap.png, id=172, 578.16pt x 433.62pt>
 File: Graficos/33/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/33/CST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/33/CST_relative_error_colormap.png  used on input line 432.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/11/LST_relative_error_colormap.png, id=165, 578.16pt x 433.62pt>
+<Graficos/11/LST_relative_error_colormap.png, id=173, 578.16pt x 433.62pt>
 File: Graficos/11/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/11/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/11/LST_relative_error_colormap.png  used on input line 449.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/12/LST_relative_error_colormap.png, id=166, 578.16pt x 433.62pt>
+<Graficos/12/LST_relative_error_colormap.png, id=174, 578.16pt x 433.62pt>
 File: Graficos/12/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/12/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/12/LST_relative_error_colormap.png  used on input line 456.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/13/LST_relative_error_colormap.png, id=167, 578.16pt x 433.62pt>
+<Graficos/13/LST_relative_error_colormap.png, id=175, 578.16pt x 433.62pt>
 File: Graficos/13/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/13/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/13/LST_relative_error_colormap.png  used on input line 463.
@@ -1038,32 +1038,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [9 <./Graficos/21/CST_relative_error_colormap.png> <./Graficos/22/CST_relative_error_colormap.png> <./Graficos/23/CST_relative_error_colormap.png> <./Graficos/31/CST_relative_error_colormap.png> <./Graficos/32/CST_relative_error_colormap.png> <./Graficos/33/CST_relative_error_colormap.png>]
-<Graficos/21/LST_relative_error_colormap.png, id=180, 578.16pt x 433.62pt>
+<Graficos/21/LST_relative_error_colormap.png, id=188, 578.16pt x 433.62pt>
 File: Graficos/21/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/21/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/21/LST_relative_error_colormap.png  used on input line 475.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/22/LST_relative_error_colormap.png, id=181, 578.16pt x 433.62pt>
+<Graficos/22/LST_relative_error_colormap.png, id=189, 578.16pt x 433.62pt>
 File: Graficos/22/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/22/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/22/LST_relative_error_colormap.png  used on input line 482.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/23/LST_relative_error_colormap.png, id=182, 578.16pt x 433.62pt>
+<Graficos/23/LST_relative_error_colormap.png, id=190, 578.16pt x 433.62pt>
 File: Graficos/23/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/23/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/23/LST_relative_error_colormap.png  used on input line 489.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/31/LST_relative_error_colormap.png, id=183, 578.16pt x 433.62pt>
+<Graficos/31/LST_relative_error_colormap.png, id=191, 578.16pt x 433.62pt>
 File: Graficos/31/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/31/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/31/LST_relative_error_colormap.png  used on input line 501.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/32/LST_relative_error_colormap.png, id=184, 578.16pt x 433.62pt>
+<Graficos/32/LST_relative_error_colormap.png, id=192, 578.16pt x 433.62pt>
 File: Graficos/32/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/32/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/32/LST_relative_error_colormap.png  used on input line 508.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
-<Graficos/33/LST_relative_error_colormap.png, id=185, 578.16pt x 433.62pt>
+<Graficos/33/LST_relative_error_colormap.png, id=193, 578.16pt x 433.62pt>
 File: Graficos/33/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/33/LST_relative_error_colormap.png>
 Package pdftex.def Info: Graficos/33/LST_relative_error_colormap.png  used on input line 515.
@@ -1156,24 +1156,24 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 48E3983656F8A444B3285B90E05914A3;1365.
+(rerunfilecheck)             Checksum: 81269DE279994F1E7CC8428D61606811;1786.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 133 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37205 strings out of 473899
- 860546 string characters out of 5726501
+ 37207 strings out of 473899
+ 860584 string characters out of 5726501
  1958960 words of memory out of 5000000
- 59249 multiletter control sequences out of 15000+600000
+ 59251 multiletter control sequences out of 15000+600000
  581896 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,93p,1099b,2341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Informe.pdf (17 pages, 2998508 bytes).
+Output written on Informe.pdf (17 pages, 3000020 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
+ 319 PDF objects out of 1000 (max. 8388607)
  69 named destinations out of 1000 (max. 500000)
- 40654 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 40670 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -272,7 +272,7 @@ Let \( u \in V \) be the exact solution of the weak formulation, and let \( u_h 
 This means that the Galerkin solution \( u_h \) is quasi-optimal: it is, up to a constant factor \( C / \alpha \), as close to the exact solution \( u \) as the best possible approximation in the finite element space \( V_h \). Therefore, the convergence of the method depends directly on the approximation properties of \( V_h \).
 
 
-\subsection*{A priori error estimates}
+\subsection{Error estimates}
 
 One of the key results in finite element theory is the estimation of the approximation error in a suitable norm. For problems formulated in the Sobolev space \( H^1(\Omega) \), we are particularly interested in estimating the error between the exact solution \( u \) and its finite element approximation \( u_h \) in the \( H^1 \)-norm.
 
@@ -290,7 +290,7 @@ where:
 
 This inequality shows that the error in the \( H^1 \)-norm decreases at a rate proportional to \( h^m \). Hence, finer meshes (smaller \( h \)) or higher-order elements (larger \( m \)) lead to more accurate approximations of the exact solution, provided that the solution is smooth enough.
 
-\subsection*{Variational formulation and matrix assembly}
+\subsection{Variational formulation and matrix assembly}
 
 Starting from the weak formulation of the Poisson problem:
 \begin{equation}
