@@ -287,6 +287,44 @@ where:
 
 This inequality shows that the error in the \( H^1 \)-norm decreases at a rate proportional to \( h^m \). Hence, finer meshes (smaller \( h \)) or higher-order elements (larger \( m \)) lead to more accurate approximations of the exact solution, provided that the solution is smooth enough.
 
+\subsection*{Variational formulation and matrix assembly}
+
+Starting from the weak formulation of the Poisson problem:
+\begin{equation}
+\int_\Omega \nabla u \cdot \nabla v \, dx = \int_\Omega f v \, dx,
+\end{equation}
+we introduce a finite-dimensional approximation of the solution \( u_h \) as a linear combination of basis functions:
+\begin{equation}
+u_h = \sum_i x_i N_i,
+\end{equation}
+where \( x_i \) are the unknown coefficients and \( N_i \) are the shape functions associated with the finite element space.
+
+Replacing \( u \) and choosing test functions \( v = N_j \), we obtain:
+\begin{equation}
+\int_\Omega \nabla \left( \sum_i x_i N_i \right) \cdot \nabla N_j \, dx = \int_\Omega f N_j \, dx.
+\end{equation}
+
+Using the linearity of the gradient and the integral:
+\begin{equation}
+\sum_i x_i \int_\Omega \nabla V_i \cdot \nabla V_j \, dx = \int_\Omega f N_j \, dx,
+\end{equation}
+we define the entries of the stiffness matrix and load vector as:
+
+\begin{equation}
+\mathbf{A} = \int_\Omega \mathbf{B}^\top \, \mathbf{I} \, \mathbf{B} \, dx, \quad \text{and} \quad \mathbf{F} = \int_\Omega f \mathbf{V} \, dx,
+\end{equation}
+
+\begin{equation}
+\mathbf{A}^e = \int_{\Omega^e} \mathbf{B}^\top \, \mathbf{I} \, \mathbf{B} \, dx.
+\end{equation}
+
+
+Thus, the variational problem reduces to a linear system:
+\begin{equation}
+\mathbf{A} \mathbf{x} = \mathbf{F},
+\end{equation}
+where \( \mathbf{A} \) is the global stiffness matrix, \( \mathbf{x} \) is the vector of unknown coefficients, and \( \mathbf{F} \) is the load vector.
+
 
 \newpage
 \section{Results}

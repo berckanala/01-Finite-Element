@@ -454,6 +454,13 @@ INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
+INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
+INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT .\LOGO_UNIVERSIDAD.jpg
@@ -632,6 +639,8 @@ INPUT .\LOGO_UNIVERSIDAD.jpg
 INPUT Informe.aux
 INPUT .\Informe.out
 INPUT .\Informe.out
+INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pedro\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
