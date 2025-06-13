@@ -59,6 +59,9 @@
 \pgfplotsset{compat=1.18} % Asegúrate de tener una versión compatible
 \usepackage{pgfplotstable}
 
+\usepackage{url}
+
+
 % ============================
 % DEFINICIONES
 % ============================
@@ -78,7 +81,7 @@
 
 \title{\textbf{Homework 3, Final Report\\ \vspace{0.5cm} \\ Finite Elements}}
 \def\footerlogo{LOGO_UNIVERSIDAD.jpg} % Logo para el pie de página
-\date{\textbf{May 26, 2025}}
+\date{\textbf{June 13, 2025}}
 
 \begin{document}
 \makeatletter
@@ -704,5 +707,11 @@ The results confirm that increasing the number of subdivisions $N$ consistently 
 While moderate geometric refinement ($r$) helped improve accuracy by concentrating nodes in regions of high gradient, excessive refinement (e.g., $r = 1.3$) slightly increased the error in some LST cases due to degradation in element shape quality. This highlights that higher-order elements, although more accurate, are also more sensitive to mesh distortion.
 
 In summary, LST elements offer superior accuracy and convergence when mesh quality is preserved. Effective mesh design and appropriate refinement strategies are critical to fully exploit the advantages of higher-order finite elements in solving elliptic PDEs.
+
+\newpage
+\nocite{wikipedia_galerkin}
+\nocite{wikipedia_weakform}
+\bibliographystyle{plain}
+\bibliography{ref.bib}
 
 \end{document}

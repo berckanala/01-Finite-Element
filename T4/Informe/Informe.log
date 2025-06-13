@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.8.8)  13 JUN 2025 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,7 +685,7 @@ File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplotstable.sty (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplotstable 2021/05/15 v1.18.1 Table typesetting and Pretty-printing (1.18.1)
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstable.code.tex (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstable.coltype.code.tex)))
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 83.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 86.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -695,24 +695,24 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (Informe.aux)
 \openout1 = `Informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count343
@@ -735,19 +735,19 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 83.
-Package microtype Info: Applying patch `item' on input line 83.
-Package microtype Info: Applying patch `toc' on input line 83.
-Package microtype Info: Applying patch `eqnum' on input line 83.
-Package microtype Info: Applying patch `footnote' on input line 83.
-Package microtype Info: Applying patch `verbatim' on input line 83.
+LaTeX Info: Redefining \microtypecontext on input line 86.
+Package microtype Info: Applying patch `item' on input line 86.
+Package microtype Info: Applying patch `toc' on input line 86.
+Package microtype Info: Applying patch `eqnum' on input line 86.
+Package microtype Info: Applying patch `footnote' on input line 86.
+Package microtype Info: Applying patch `verbatim' on input line 86.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 83.
+LaTeX Info: Redefining \showhyphens on input line 86.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -788,7 +788,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 83.
+Package hyperref Info: Link coloring ON on input line 86.
 (Informe.out) (Informe.out)
 \@outlinefile=\write4
 \openout4 = `Informe.out'.
@@ -799,7 +799,7 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 <LOGO_UNIVERSIDAD.jpg, id=50, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 88.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 91.
 (pdftex.def)             Requested size: 366.24527pt x 132.80438pt.
 
 
@@ -829,9 +829,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.129 \newpage
+l.132 \newpage
                [1]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 138.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 141.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -843,7 +843,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 142.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 145.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -856,12 +856,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \newpage
+l.145 \newpage
                [1]
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 151.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 154.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -874,7 +874,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 197.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 200.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -887,7 +887,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 240.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 243.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -897,14 +897,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [4]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 244.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 247.
  (C:\Users\pedro\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 276.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 279.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -917,7 +917,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 315.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 318.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -930,7 +930,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 329.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 332.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -943,48 +943,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <CST_mesh.png, id=142, 545.03625pt x 519.74174pt>
 File: CST_mesh.png Graphic file (type png)
 <use CST_mesh.png>
-Package pdftex.def Info: CST_mesh.png  used on input line 341.
+Package pdftex.def Info: CST_mesh.png  used on input line 344.
 (pdftex.def)             Requested size: 206.01077pt x 196.44914pt.
 <LST_mesh.png, id=144, 534.19576pt x 524.55975pt>
 File: LST_mesh.png Graphic file (type png)
 <use LST_mesh.png>
-Package pdftex.def Info: LST_mesh.png  used on input line 348.
+Package pdftex.def Info: LST_mesh.png  used on input line 351.
 (pdftex.def)             Requested size: 206.01077pt x 202.2963pt.
 <Graficos/11/CST_relative_error_colormap.png, id=145, 578.16pt x 433.62pt>
 File: Graficos/11/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/11/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/11/CST_relative_error_colormap.png  used on input line 362.
+Package pdftex.def Info: Graficos/11/CST_relative_error_colormap.png  used on input line 365.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/12/CST_relative_error_colormap.png, id=146, 578.16pt x 433.62pt>
 File: Graficos/12/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/12/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/12/CST_relative_error_colormap.png  used on input line 369.
+Package pdftex.def Info: Graficos/12/CST_relative_error_colormap.png  used on input line 372.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/13/CST_relative_error_colormap.png, id=147, 578.16pt x 433.62pt>
 File: Graficos/13/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/13/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/13/CST_relative_error_colormap.png  used on input line 376.
+Package pdftex.def Info: Graficos/13/CST_relative_error_colormap.png  used on input line 379.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/21/CST_relative_error_colormap.png, id=148, 578.16pt x 433.62pt>
 File: Graficos/21/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/21/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/21/CST_relative_error_colormap.png  used on input line 388.
+Package pdftex.def Info: Graficos/21/CST_relative_error_colormap.png  used on input line 391.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/22/CST_relative_error_colormap.png, id=149, 578.16pt x 433.62pt>
 File: Graficos/22/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/22/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/22/CST_relative_error_colormap.png  used on input line 395.
+Package pdftex.def Info: Graficos/22/CST_relative_error_colormap.png  used on input line 398.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/23/CST_relative_error_colormap.png, id=150, 578.16pt x 433.62pt>
 File: Graficos/23/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/23/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/23/CST_relative_error_colormap.png  used on input line 402.
+Package pdftex.def Info: Graficos/23/CST_relative_error_colormap.png  used on input line 405.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 409.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 412.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -997,38 +997,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Graficos/31/CST_relative_error_colormap.png, id=162, 578.16pt x 433.62pt>
 File: Graficos/31/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/31/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/31/CST_relative_error_colormap.png  used on input line 415.
+Package pdftex.def Info: Graficos/31/CST_relative_error_colormap.png  used on input line 418.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/32/CST_relative_error_colormap.png, id=163, 578.16pt x 433.62pt>
 File: Graficos/32/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/32/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/32/CST_relative_error_colormap.png  used on input line 422.
+Package pdftex.def Info: Graficos/32/CST_relative_error_colormap.png  used on input line 425.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/33/CST_relative_error_colormap.png, id=164, 578.16pt x 433.62pt>
 File: Graficos/33/CST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/33/CST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/33/CST_relative_error_colormap.png  used on input line 429.
+Package pdftex.def Info: Graficos/33/CST_relative_error_colormap.png  used on input line 432.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/11/LST_relative_error_colormap.png, id=165, 578.16pt x 433.62pt>
 File: Graficos/11/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/11/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/11/LST_relative_error_colormap.png  used on input line 446.
+Package pdftex.def Info: Graficos/11/LST_relative_error_colormap.png  used on input line 449.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/12/LST_relative_error_colormap.png, id=166, 578.16pt x 433.62pt>
 File: Graficos/12/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/12/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/12/LST_relative_error_colormap.png  used on input line 453.
+Package pdftex.def Info: Graficos/12/LST_relative_error_colormap.png  used on input line 456.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/13/LST_relative_error_colormap.png, id=167, 578.16pt x 433.62pt>
 File: Graficos/13/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/13/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/13/LST_relative_error_colormap.png  used on input line 460.
+Package pdftex.def Info: Graficos/13/LST_relative_error_colormap.png  used on input line 463.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 467.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 470.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1041,38 +1041,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Graficos/21/LST_relative_error_colormap.png, id=180, 578.16pt x 433.62pt>
 File: Graficos/21/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/21/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/21/LST_relative_error_colormap.png  used on input line 472.
+Package pdftex.def Info: Graficos/21/LST_relative_error_colormap.png  used on input line 475.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/22/LST_relative_error_colormap.png, id=181, 578.16pt x 433.62pt>
 File: Graficos/22/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/22/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/22/LST_relative_error_colormap.png  used on input line 479.
+Package pdftex.def Info: Graficos/22/LST_relative_error_colormap.png  used on input line 482.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/23/LST_relative_error_colormap.png, id=182, 578.16pt x 433.62pt>
 File: Graficos/23/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/23/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/23/LST_relative_error_colormap.png  used on input line 486.
+Package pdftex.def Info: Graficos/23/LST_relative_error_colormap.png  used on input line 489.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/31/LST_relative_error_colormap.png, id=183, 578.16pt x 433.62pt>
 File: Graficos/31/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/31/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/31/LST_relative_error_colormap.png  used on input line 498.
+Package pdftex.def Info: Graficos/31/LST_relative_error_colormap.png  used on input line 501.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/32/LST_relative_error_colormap.png, id=184, 578.16pt x 433.62pt>
 File: Graficos/32/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/32/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/32/LST_relative_error_colormap.png  used on input line 505.
+Package pdftex.def Info: Graficos/32/LST_relative_error_colormap.png  used on input line 508.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 <Graficos/33/LST_relative_error_colormap.png, id=185, 578.16pt x 433.62pt>
 File: Graficos/33/LST_relative_error_colormap.png Graphic file (type png)
 <use Graficos/33/LST_relative_error_colormap.png>
-Package pdftex.def Info: Graficos/33/LST_relative_error_colormap.png  used on input line 512.
+Package pdftex.def Info: Graficos/33/LST_relative_error_colormap.png  used on input line 515.
 (pdftex.def)             Requested size: 146.5009pt x 109.8736pt.
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 525.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 528.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1085,7 +1085,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 605.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 608.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1095,12 +1095,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
 [11]
-Package pgfplots info on input line 664: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
+Package pgfplots info on input line 667: Using 'lua backend=false' for axis: ymode=log unsupported (yet).
 
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 690.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 693.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1113,7 +1113,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 697.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 700.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1126,7 +1126,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 708.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 711.
 (pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1135,7 +1135,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
 
-[14] 
+[14] (Informe.bbl)
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 717.
+(pdftex.def)             Requested size: 114.4512pt x 41.49829pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 45.84833pt, for example:
+(fancyhdr)                \setlength{\headheight}{45.84833pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-33.84833pt}.
+
+[15] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (Informe.aux)
  ***********
@@ -1147,20 +1160,20 @@ Package rerunfilecheck Info: File `Informe.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 130 (\begingroup)
+### semi simple group (level 1) entered at line 133 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37191 strings out of 473899
- 860191 string characters out of 5726501
+ 37205 strings out of 473899
+ 860546 string characters out of 5726501
  1958960 words of memory out of 5000000
- 59242 multiletter control sequences out of 15000+600000
+ 59249 multiletter control sequences out of 15000+600000
  581896 words of font info for 167 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,19n,93p,1099b,2341s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/pedro/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Informe.pdf (16 pages, 2995054 bytes).
+Output written on Informe.pdf (17 pages, 2998508 bytes).
 PDF statistics:
- 299 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 311 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
  40654 words of extra memory for PDF output out of 42996 (max. 10000000)
 
