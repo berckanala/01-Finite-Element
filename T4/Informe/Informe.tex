@@ -1,0 +1,282 @@
+% ============================
+% DOCUMENT SETUP
+% ============================
+\documentclass[12pt]{article}
+
+% ============================
+% PACKAGES
+% ============================
+
+% --- Matemáticas ---
+\usepackage{amsmath, amsthm, amssymb, amsfonts, amsbsy, amscd}
+
+% --- Tablas y Figuras ---
+\usepackage{graphicx} % Para incluir imágenes
+\usepackage{tabularx} % Tablas de ancho automático
+\usepackage{float}    % Mejor control de ubicación de figuras/tablas
+\usepackage{booktabs} % Mejor estilo para tablas
+\usepackage{multirow} % Combinar filas en tablas
+\usepackage{diagbox}  % Crear diagonales en tablas
+\usepackage{subfig}   % Subfiguras
+\usepackage{caption}  % Personalizar leyendas
+
+% --- Tipografía y Formato ---
+\usepackage{times}       % Fuente Times New Roman
+\usepackage{setspace}    % Espaciado
+\usepackage{microtype}   % Mejoras tipográficas
+\usepackage[none]{hyphenat} % Evitar partición de palabras
+
+% --- Geometría ---
+\usepackage[letterpaper, bottom=2.5cm, top=2.5cm, right=2.5cm, left=3cm, headsep=1.5cm]{geometry}
+
+% --- Encabezados y Pies de Página ---
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% --- Enumeraciones ---
+\usepackage{enumitem} % Mejor control sobre listas
+
+% --- Otros ---
+\usepackage{tikz}     % Para gráficos vectoriales
+\usepackage{cancel}   % Para tachar en fórmulas
+\usepackage{cite}     % Para manejo de citas
+\usepackage{chicago}  % Estilo de bibliografía Chicago
+
+% --- Enlaces e Hipervínculos ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    filecolor=magenta,
+    urlcolor=blue
+}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Asegúrate de tener una versión compatible
+\usepackage{pgfplotstable}
+
+% ============================
+% DEFINICIONES
+% ============================
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+
+\DeclareMathOperator*{\argmin}{arg\,min} % Operador argmin
+\DeclareMathOperator*{\argmax}{arg\,max} % Operador argmax
+
+\renewcommand*\contentsname{Index} % Cambiar nombre de tabla de contenidos
+\setlength{\footskip}{45pt} % Distancia pie de página
+\setlength{\parindent}{0pt} % Sin sangría en párrafos
+
+% ============================
+% DOCUMENTO
+% ============================
+
+\title{\textbf{Homework 3, Final Report\\ \vspace{0.5cm} \\ Finite Elements}}
+\def\footerlogo{LOGO_UNIVERSIDAD.jpg} % Logo para el pie de página
+\date{\textbf{May 26, 2025}}
+
+\begin{document}
+\makeatletter
+\begin{titlepage}
+    \begin{center}
+        \vspace{2cm}
+        \includegraphics[width=0.8\linewidth]{LOGO_UNIVERSIDAD.jpg}\\[10ex]
+        
+        \rule{\textwidth}{1pt} \\[2ex]
+        {\LARGE \textbf{Homework 4, Report\\ \vspace{0.5cm} Finite Elements}}\\[2ex]
+        \rule{\textwidth}{1pt} \\[10ex]
+
+        \vfill
+
+        \begin{flushright}
+            \textbf{Professor:\\
+             Jose A. Abell} \\[0.3cm]
+            \textbf{Students: \\
+            Bernardo Caprile\\
+            Pedro Valenzuela} \\[0.3cm]
+        \end{flushright}
+        
+        \vspace*{1cm}
+        {\normalsize \@date}
+    \end{center}
+\end{titlepage}
+\makeatother
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\shorttitle}
+
+
+%\lhead{Guides and tutorials}
+\rfoot{\thepage}
+\lhead{Finite Elements} 
+\rhead{\includegraphics[width=0.25\linewidth]{LOGO_UNIVERSIDAD.jpg}} % For header of the document
+\renewcommand{\footrulewidth}{0.5pt}
+
+\tableofcontents
+
+%% If you write a long report, add list of figures and tables and start reporting on new page
+%\listoffigures
+%\listoftables
+%\newpage
+\thispagestyle{empty}
+\newpage
+\spacing{1.15}
+\setcounter{page}{1}
+
+\newpage
+\section*{GitHub Repository}
+
+The code and data for this project are available on GitHub at the following link:
+\begin{center}
+    \url{https://github.com/berckanala/01-Finite-Element}
+\end{center}
+
+
+\newpage
+\section{Introduction}
+
+This assignment implements a numerical solver for the two-dimensional Poisson equation with Dirichlet boundary conditions, using the finite element method with triangular linear (CST) and quadratic (LST) elements. The objective is to approximate the weak form of the problem through the Galerkin method on unstructured meshes.
+
+The meshes are generated with Gmsh and read from \texttt{.msh} files, from which node coordinates, element connectivities, and boundary conditions are extracted. Element stiffness matrices are computed using numerical integration of shape function gradients, then assembled into the global system. After applying the boundary conditions, the resulting linear system is solved to obtain the approximate solution.
+
+Verification is carried out using the Method of Manufactured Solutions (MMS), comparing the numerical result with a known analytical solution. Errors are computed in the $L^2$ and $H^1$ norms, and convergence rates are analyzed as the mesh is refined, confirming the expected theoretical orders.
+
+\newpage
+\section{Theoretical Background}
+
+This section presents the mathematical formulation underlying the numerical solution of the Poisson equation with Dirichlet boundary conditions using the Finite Element Method (FEM). The derivation of the weak form, the construction of the finite element spaces, and the discretization process are detailed, providing the foundation for the implementation described in the following sections.
+
+
+\subsection{Strong Form}
+
+We consider the Poisson equation defined over a bounded domain $\Omega \subset \mathbb{R}^2$ with boundary $\partial \Omega$. The problem is given by:
+
+\begin{equation}
+\begin{aligned}
+    -\Delta u &= f \quad \text{in } \Omega, \\
+    u &= g \quad \text{on } \partial \Omega,
+\end{aligned}
+\label{eq:strong_form}
+\end{equation}
+
+where $u: \Omega \rightarrow \mathbb{R}$ is the unknown scalar field (e.g., temperature, potential), $f: \Omega \rightarrow \mathbb{R}$ is a given source function, and $g: \partial \Omega \rightarrow \mathbb{R}$ prescribes the Dirichlet boundary condition.
+
+The operator $\Delta u = \nabla \cdot \nabla u$ denotes the Laplacian of $u$, which represents the divergence of the gradient of $u$. The strong form requires the solution $u$ to be twice continuously differentiable in $\Omega$ and to satisfy the differential equation and boundary condition pointwise.
+
+
+\subsection{Weak Form}
+
+To derive the weak form, we multiply the strong form \eqref{eq:strong_form} by a test function $v \in H^1_0(\Omega)$ and integrate over the domain $\Omega$:
+
+\begin{equation}
+\int_{\Omega} (-\Delta u)\, v \, dx = \int_{\Omega} f\, v \, dx.
+\end{equation}
+
+Applying Green's first identity (integration by parts), we obtain:
+
+\begin{equation}
+\int_{\Omega} \nabla u \cdot \nabla v \, dx - \int_{\partial\Omega} \frac{\partial u}{\partial n} v \, ds = \int_{\Omega} f\, v \, dx,
+\end{equation}
+
+where $\frac{\partial u}{\partial n}$ denotes the normal derivative on the boundary $\partial\Omega$. Since $v$ vanishes on the boundary (as $v \in H^1_0(\Omega)$), the boundary term disappears, leading to the weak form:
+
+\begin{equation}
+\int_{\Omega} \nabla u \cdot \nabla v \, dx = \int_{\Omega} f\, v \, dx \quad \forall v \in H^1_0(\Omega).
+\label{eq:weak_form}
+\end{equation}
+
+The weak formulation seeks a function $u \in H^1(\Omega)$ such that $u = g$ on $\partial \Omega$ and the variational identity \eqref{eq:weak_form} is satisfied for all test functions $v$ in $H^1_0(\Omega)$. This relaxation of the differentiability requirement allows for a broader class of admissible solutions and serves as the basis for the finite element discretization.
+
+
+\subsection{Hilbert Spaces}
+
+The weak formulation of the Poisson equation is naturally set in the framework of Sobolev spaces, which are examples of Hilbert spaces. Specifically, we work with the space $H^1(\Omega)$, defined as:
+
+\begin{equation}
+H^1(\Omega) = \left\{ u \in L^2(\Omega) \; \big| \; \nabla u \in (L^2(\Omega))^2 \right\},
+\end{equation}
+
+equipped with the norm:
+
+\begin{equation}
+\| u \|_{H^1(\Omega)} = \left( \int_\Omega u^2 \, dx + \int_\Omega |\nabla u|^2 \, dx \right)^{1/2}.
+\end{equation}
+
+The subspace $H^1_0(\Omega)$ consists of functions in $H^1(\Omega)$ that vanish on the boundary $\partial \Omega$ (in the trace sense):
+
+\begin{equation}
+H^1_0(\Omega) = \left\{ u \in H^1(\Omega) \; \big| \; u = 0 \text{ on } \partial\Omega \right\}.
+\end{equation}
+
+Both $H^1(\Omega)$ and $H^1_0(\Omega)$ are Hilbert spaces, meaning they are complete inner product spaces. The inner product in $H^1_0(\Omega)$ is typically defined as:
+
+\begin{equation}
+(u, v)_{H^1_0} = \int_\Omega \nabla u \cdot \nabla v \, dx,
+\end{equation}
+
+which induces the norm:
+
+\begin{equation}
+\| u \|_{H^1_0(\Omega)} = \left( \int_\Omega |\nabla u|^2 \, dx \right)^{1/2}.
+\end{equation}
+
+These spaces provide the functional setting for the weak formulation of elliptic partial differential equations and are essential for establishing the well-posedness and stability of the finite element method.
+
+\subsection{Galerkin Method Analysis}
+
+Here, we restrict our attention to symmetric bilinear forms, that is,
+\begin{equation}
+a(u, v) = a(v, u) \quad \forall u, v \in V.
+\end{equation}
+Although Galerkin methods can be extended to nonsymmetric forms (e.g., Petrov–Galerkin methods), the symmetric case allows for a cleaner and more direct theoretical analysis.
+
+The analysis of Galerkin methods proceeds in two main steps. First, we establish that the Galerkin formulation is well-posed in the sense of Hadamard, meaning that it admits a unique solution that depends continuously on the data. Second, we investigate the approximation quality of the Galerkin solution \( u_n \), defined in a finite-dimensional subspace \( V_n \subset V \).
+
+The theoretical foundation relies on two fundamental properties of the bilinear form \( a(\cdot, \cdot) \):
+
+\begin{itemize}
+    \item \textbf{Boundedness:} There exists a constant \( C > 0 \) such that for all \( u, v \in V \),
+    \begin{equation}
+    a(u, v) \leq C \| u \| \, \| v \|.
+    \end{equation}
+    
+    \item \textbf{Ellipticity (or coercivity):} There exists a constant \( c > 0 \) such that for all \( u \in V \),
+    \begin{equation}
+    a(u, u) \geq c \| u \|^2.
+    \end{equation}
+\end{itemize}
+
+Under these two conditions, the Lax–Milgram theorem guarantees the existence and uniqueness of the solution to the weak formulation. The norm \( \| \cdot \| \) used here is typically the energy norm induced by the bilinear form.
+
+\subsubsection*{Well-posedness of the Galerkin Equation}
+
+Since the finite-dimensional subspace \( V_n \subset V \), the bilinear form \( a(\cdot, \cdot) \) remains bounded and elliptic on \( V_n \). Therefore, the Galerkin problem inherits the well-posedness of the original continuous problem. This implies that the discrete problem also has a unique solution.
+
+\subsubsection*{Quasi-optimality: Céa's Lemma}
+
+Let \( u \in V \) be the exact solution of the weak formulation, and let \( u_h \in V_h \subset V \) be its Galerkin approximation in a finite-dimensional subspace. Then, assuming that the bilinear form \( a(\cdot, \cdot) \) is bounded and coercive in the \( H^1(\Omega) \) norm, Céa's lemma gives the following estimate:
+
+\begin{equation}
+\| u - u_h \|_{H^1(\Omega)} \leq \frac{C}{\alpha} \inf_{v_h \in V_h} \| u - v_h \|_{H^1(\Omega)}.
+\end{equation}
+
+This means that the Galerkin solution \( u_h \) is quasi-optimal: it is, up to a constant factor \( C / \alpha \), as close to the exact solution \( u \) as the best possible approximation in the finite element space \( V_h \). Therefore, the convergence of the method depends directly on the approximation properties of \( V_h \).
+
+
+\newpage
+\section{Results}
+
+In this section, we present the results obtained from the numerical solution of the Poisson equation using the finite element method (FEM) with triangular linear (CST) and quadratic (LST) elements.
+
+\subsection{CST Elements}
+
+
+
+\end{document}
+
+
