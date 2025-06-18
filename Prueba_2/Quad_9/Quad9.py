@@ -24,6 +24,7 @@ class Quad9:
         self.xy = np.array([node.coord for node in self.node_list])
         self.index = np.hstack([node.dofs for node in self.node_list])
         self.Kg, self.A, self.F_fe_global = self.calculate_K0()
+        self.B = None
 
     def calculate_interpolation_functions(self, zeta, eta):
         # Funciones de forma
@@ -75,20 +76,32 @@ class Quad9:
 
         return N, dNnatural
 
-    def calculate_B_matrix(self, zeta, eta):
+    def calculate_B_matrix(self, zeta=0.0, eta=0.0):
+        """
+        Calcula la matriz B, Jacobiano (J), determinante de Jacobiano (J_det) y las funciones de forma (N)
+        para un punto de integración dado (zeta, eta).
+        Si no se pasan valores de zeta y eta, utiliza los valores predeterminados (0.0, 0.0).
+        """
         N, dNnatural = self.calculate_interpolation_functions(zeta, eta)
+        
+        # Calcular el Jacobiano
         J = dNnatural @ self.xy
         J_det = np.linalg.det(J)
 
         if J_det <= 0:
             raise ValueError("Jacobiano no positivo.")
 
+        # Calculamos las derivadas en coordenadas cartesianas
         dNcartesian = np.linalg.solve(J, dNnatural)
-        B = np.zeros((3, 18))
-        B[0, 0::2] = dNcartesian[0, :]
-        B[1, 1::2] = dNcartesian[1, :]
-        B[2, 0::2] = dNcartesian[1, :]
-        B[2, 1::2] = dNcartesian[0, :]
+        
+        # Crear la matriz B
+        B = np.zeros((3, 18))  # 3 filas, 18 columnas (9 nodos * 2 grados de libertad)
+        
+        B[0, 0::2] = dNcartesian[0, :]  # Derivadas respecto a x (dN/dx)
+        B[1, 1::2] = dNcartesian[1, :]  # Derivadas respecto a y (dN/dy)
+        B[2, 0::2] = dNcartesian[1, :]  # Derivadas cruzadas (dN/dy respecto a x)
+        B[2, 1::2] = dNcartesian[0, :]  # Derivadas cruzadas (dN/dx respecto a y)
+        
         return B, J, J_det, N
 
     def calculate_K0(self):
@@ -121,8 +134,22 @@ class Quad9:
         return float(np.sqrt(σx**2 - σx * σy + σy**2 + 3 * τxy**2))
 
     def get_stress(self, u_global):
+        # Verificar si B ya está calculada, si no, calcularla
+        if self.B is None:
+            # Calcular la matriz B si no está calculada
+            self.B, J, J_det, N = self.calculate_B_matrix()  # Usamos el valor predeterminado de zeta y eta (0, 0)
+        
+        # Verificar que B tenga las dimensiones correctas
+        if self.B.shape != (3, 18):
+            raise ValueError(f"Dimensiones incorrectas para la matriz B: {self.B.shape}. Se esperaba (3, 18).")
+        
+        # Obtener los desplazamientos del elemento
         ue = self.get_element_displacements(u_global)
-        return self.C @ (self.B @ ue)
+        
+        # Calcular la tensión
+        sigma = self.C @ (self.B @ ue)  # Ahora B está calculada y tiene las dimensiones correctas
+        return sigma
+
 
     def get_strain(self, u_global):
         ue = self.get_element_displacements(u_global)
