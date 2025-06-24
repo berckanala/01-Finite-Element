@@ -1,4 +1,4 @@
-// Gmsh project created on Tue May 06 17:33:21 2025
+// Gmsh project created on Wed May 07 18:14:08 2025
 SetFactory("OpenCASCADE");
 //+
-Rectangle(1) = {-1.3, 1.2, 0, 2.6, 0.4, 0};
+Rectangle(1) = {0, 0, 0, 5, 0.5, 0};

@@ -6,7 +6,7 @@ P = np.array([4.0, 4.0])
 
 # Coordenadas de los nodos del Q4 en el espacio físico (u_1)
 # Formato: [x1, y1, x2, y2, ..., x4, y4]
-u_1 = [3, 0, 9, 0, 0, 9, 0, 3]
+u_1 = [0,0,0,0.5,0,1,0.5,0]
 coords = np.array(u_1).reshape(4, 2)
 
 # Función que define el sistema de ecuaciones
@@ -57,24 +57,13 @@ import numpy as np
 
 # Coordenadas nodales del Quad4 (debes ajustar si las reales son distintas)
 # Nodo 1, 2, 3, 4 en sentido antihorario
-coords = np.array([
-    [0.0, 3.0],   # Nodo 1
-    [3.0, 0.0],   # Nodo 2
-    [9.0, 0.0],   # Nodo 3
-    [0.0, 9.0]    # Nodo 4
-])
-coords_desplazado = np.array([
-    [0.0, 1.0],   # Nodo 1
-    [5.0, 0.0],   # Nodo 2
-    [12.0, 0.0],   # Nodo 3
-    [0.0, 6.0]    # Nodo 4
-])
-# Desplazamientos globales u = [ux1, uy1, ux2, uy2, ux3, uy3, ux4, uy4]
-u = np.array([3, 0, 9, 0, 0, 9, 0, 3])
+coords = np.array([[-0.125,  0.375],
+        [ 0.125,  0.125]])
+
 
 # Punto de evaluación en coordenadas naturales
-xi = -0.5862
-eta = 0.8182
+xi = 0
+eta = 0
 
 # Derivadas de las shape functions respecto a xi y eta
 dN_dxi = 0.25 * np.array([
