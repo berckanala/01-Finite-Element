@@ -5,7 +5,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt  # Para obtener colores del cmap
 
 # === Leer el archivo .msh ===
-mesh = meshio.read("prueba.msh")
+mesh = meshio.read("Pro_malla.msh")
 points = mesh.points
 
 # === Invertir field_data
@@ -52,7 +52,7 @@ for i, tag in enumerate(unique_tags):
 
 # === Visualizar
 plotter = pv.Plotter()
-plotter.add_mesh(grid, scalars="volumen_fisico", show_edges=True, cmap="Set3", opacity=0.6)
+plotter.add_mesh(grid, scalars="volumen_fisico", show_edges=True, cmap="Set2", opacity=0.6)
 plotter.add_legend(legend_entries)
 plotter.add_axes()
 plotter.show()
