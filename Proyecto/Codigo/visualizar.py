@@ -5,7 +5,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt  # Para obtener colores del cmap
 
 # === Leer el archivo .msh ===
-mesh = meshio.read("Pro_malla.msh")
+mesh = meshio.read("Pro_malla1.msh")
 points = mesh.points
 
 # === Invertir field_data
