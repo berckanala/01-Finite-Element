@@ -4,8 +4,8 @@ SetFactory("OpenCASCADE");
 //--------------------------------------
 // PARÁMETROS
 r = 9;                // Radio de los círculos del alma
-xApoyoIzq = 50;       // Coordenada X del apoyo inferior izquierdo
-xApoyoDer = 170;      // Coordenada X del apoyo inferior derecho
+xApoyoIzq = 20;       // Coordenada X del apoyo inferior izquierdo
+xApoyoDer = 200;      // Coordenada X del apoyo inferior derecho
 yApoyoInf = 0;        // Coordenada Y base para los apoyos inferiores
 Ancho_apoyos = 10;    // Altura de extrusión de los apoyos
 AAA = Ancho_apoyos/2; // Mitad del ancho
@@ -102,14 +102,15 @@ Plane Surface(621) = {521};
 // SUPERFICIES PRINCIPALES
 Curve Loop(701) = {1, 2, 3, 4};
 Plane Surface(7010) = {701};
+
 Curve Loop(702) = {3, 5, 6, 7};
 Plane Surface(7020) = {702, 301, 311, 321, 331};
+
 Curve Loop(703) = {6, 8, 9, 10};
 Plane Surface(7030) = {703};
 
-
 //--------------------------------------
-// EXTRUSIONES SIMPLIFICADAS — UNA SOLA POR VOLUMEN
+// EXTRUSIONES SIMPLIFICADAS — UNA POR VOLUMEN
 Translate {0, 0, -10} { Surface{7010}; }
 Extrude {0, 0, 20} { Surface{7010}; }
 
@@ -126,17 +127,15 @@ Translate {0, 0, -AAA} { Surface{611}; }
 Extrude {0, 0, Ancho_apoyos} { Surface{611}; }
 
 Translate {0, 0, -AAA} { Surface{621}; }
-Extrude {0, 0, Ancho_apoyos} { Surface{621}; }//+
+Extrude {0, 0, Ancho_apoyos} { Surface{621}; }
 
-//+
-Physical Volume("Ala Inferior", 7079) = {1};
-//+
-Physical Volume("Ala Superior", 7078) = {2};
-//+
-Physical Volume("Alma", 7077) = {3};
-//+
-Physical Volume("Soporte superior", 7080) = {4};
-//+
-Physical Volume("Soporte inferior izq", 7081) = {5};
-//+
-Physical Volume("Soporte inferior der", 7082) = {6};
+//--------------------------------------
+// UNIFICAR LOS VOLUMENES DE LA VIGA
+Compound Volume{1,2,3};
+
+//--------------------------------------
+// DEFINIR VOLUMENES FISICOS
+// Ojo: después de Compound, la viga es solo un volumen (1)
+Physical Volume("Viga", 7079) = {1};
+Physical Volume("BC_1", 7080) = {4};
+Physical Volume("BC_R1", 7081) = {5,6};
