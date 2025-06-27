@@ -120,7 +120,7 @@ ops.pattern("Plain", 1, 1)
 
 # Aplicar carga distribuida
 for n in selected_nodes:
-    ops.load(int(n + 1), 0, 0, -1e6 / len(selected_nodes))
+    ops.load(int(n + 1), 0, 0, -1e10 / len(selected_nodes))
 
 # Configuración análisis
 ops.system("ProfileSPD")
@@ -146,6 +146,39 @@ for i in range(points.shape[0]):
 
 max_disp = np.linalg.norm(displacements, axis=1).max()
 print(f"Desplazamiento máximo: {max_disp:.6e} m")
+import pyvista as pv
+
+# === Construir la malla tetraédrica original ===
+# Obtener todos los tetraedros en un solo array
+all_tets = []
+for name in ["Viga", "BC_R1", "BC_1"]:
+    all_tets.extend(volumes[name])
+
+cells = np.hstack([np.full((len(all_tets), 1), 4), np.array(all_tets)])
+celltypes = np.full(len(all_tets), pv.CellType.TETRA)
+
+# Crear grid
+grid = pv.UnstructuredGrid(cells, celltypes, points)
+
+# === Crear array de desplazamientos
+displacements = np.zeros_like(points)
+for i in range(points.shape[0]):
+    u = ops.nodeDisp(i + 1)
+    displacements[i, :] = u
+# Escalar deformada (puedes ajustar)
+scale_factor = 5.0
+
+# === Crear nueva malla con desplazamiento aplicado
+deformed_points = points + scale_factor * displacements
+grid_deformed = pv.UnstructuredGrid(cells, celltypes, deformed_points)
+
+# === Visualización
+plotter = pv.Plotter()
+plotter.add_mesh(grid, color="lightgray", opacity=0.3, show_edges=True, label="Original")
+plotter.add_mesh(grid_deformed, color="red", opacity=0.6, show_edges=True, label="Deformada")
+plotter.add_axes()
+plotter.add_legend()
+plotter.show()
 
 von_mises = []
 
@@ -174,7 +207,7 @@ plotter_vm = pv.Plotter()
 plotter_vm.add_mesh(
     grid_viga,
     scalars="von_mises",
-    cmap="inferno",
+    cmap="viridis",
     show_edges=True,
     opacity=0.9,
     scalar_bar_args={"title": "Von Mises [Pa]"}

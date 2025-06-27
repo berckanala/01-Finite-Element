@@ -5,7 +5,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 # === Leer el archivo .msh ===
-mesh = meshio.read("prueba_god.msh")
+mesh = meshio.read("Pber.msh")
 points = mesh.points
 
 # === Invertir field_data
@@ -63,7 +63,7 @@ plotter = pv.Plotter(shape=(1,2), title="Verificación de la malla")
 # Subplot 1: colores por volumen físico
 plotter.subplot(0,0)
 plotter.add_text("Por volumen físico", font_size=10)
-plotter.add_mesh(grid, scalars="volumen_fisico", show_edges=True, cmap="Set3", opacity=0.6)
+plotter.add_mesh(grid, scalars="volumen_fisico", show_edges=True, cmap="Set1", opacity=0.6)
 plotter.add_legend(legend_entries)
 plotter.add_axes()
 
