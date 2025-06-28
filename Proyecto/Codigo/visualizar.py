@@ -209,7 +209,7 @@ plotter_vm.add_mesh(
     scalars="von_mises",
     cmap="viridis",
     show_edges=True,
-    opacity=0.9,
+    opacity=0.7,
     scalar_bar_args={"title": "Von Mises [Pa]"}
 )
 plotter_vm.add_axes()
