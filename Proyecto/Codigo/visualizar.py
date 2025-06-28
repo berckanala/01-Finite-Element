@@ -96,17 +96,17 @@ for n in nodes_BC_R1:
 
 nodes_BC_1 = volume_nodes["BC_1"]
 for n in nodes_BC_1:
-    ops.fix(int(n + 1), 1, 1, 0)
+    ops.fix(int(n + 1), 1, 0, 1)
 
 # Filtrar nodos de la viga donde se aplica la carga
-target_y = 110.0
-target_z = 30.0
+target_x = 110.0
+target_y = 30.0
 tolerance = 1e-3
 
 selected_nodes = []
 for i, p in enumerate(points):
     if i in volume_nodes["Viga"]:
-        if abs(p[1] - target_y) < tolerance and abs(p[2] - target_z) < tolerance:
+        if abs(p[1] - target_y) < tolerance and abs(p[0] - target_x) < tolerance:
             selected_nodes.append(i)
 
 print(f"Se aplicará la carga en {len(selected_nodes)} nodos con y=110 y z=30.")
@@ -120,7 +120,7 @@ ops.pattern("Plain", 1, 1)
 
 # Aplicar carga distribuida
 for n in selected_nodes:
-    ops.load(int(n + 1), 0, 0, -1e10 / len(selected_nodes))
+    ops.load(int(n + 1), 0,-1e10,0 / len(selected_nodes))
 
 # Configuración análisis
 ops.system("ProfileSPD")
@@ -166,7 +166,7 @@ for i in range(points.shape[0]):
     u = ops.nodeDisp(i + 1)
     displacements[i, :] = u
 # Escalar deformada (puedes ajustar)
-scale_factor = 5.0
+scale_factor = 1.0
 
 # === Crear nueva malla con desplazamiento aplicado
 deformed_points = points + scale_factor * displacements
