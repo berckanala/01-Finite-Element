@@ -118,7 +118,7 @@ def seleccionar_a_eliminar(tensiones, percent_to_remove=0.10, protected_indices=
 
 # === Iteraciones
 n_iteraciones=50
-percent_to_remove=0.0009
+percent_to_remove=0.0007
 exclude_indices=[]
 
 for iteracion in range(n_iteraciones):
@@ -174,5 +174,5 @@ for iteracion in range(n_iteraciones):
     p = pv.Plotter()
     p.add_mesh(grid, scalars="von_mises", cmap="viridis", show_edges=True, opacity=0.8)
     p.add_title(f"Iteración {iteracion+1}")
-    if iteracion ==10 or iteracion == 20 or iteracion == 30 or iteracion == 40:
+    if  iteracion == 30:
         p.show()

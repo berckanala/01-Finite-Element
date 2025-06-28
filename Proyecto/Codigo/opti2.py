@@ -1,11 +1,11 @@
 import meshio
 import numpy as np
-from collections import defaultdict, deque
+from collections import defaultdict
 from openseespy import opensees as ops
 import pyvista as pv
 
 # === Leer malla base ===
-mesh = meshio.read("prueba_god.msh")
+mesh = meshio.read("Proo.msh")
 points = mesh.points
 
 field_data = mesh.field_data
@@ -34,9 +34,9 @@ if not selected_nodes:
     raise ValueError("❌ No se encontraron nodos de carga.")
 
 # === Función que reconstruye modelo y calcula tensiones
-def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_elements=None):
-    if exclude_elements is None:
-        exclude_elements = []
+def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, elementos_fantasma=None):
+    if elementos_fantasma is None:
+        elementos_fantasma = set()
 
     ops.wipe()
     ops.model("basic", "-ndm",3,"-ndf",3)
@@ -45,25 +45,25 @@ def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_el
         ops.node(i+1,*coord)
 
     ops.nDMaterial("ElasticIsotropic",1,3.5e9,0.35,1250)
-    ops.nDMaterial("ElasticIsotropic",2,1e20,0,7850)
+    ops.nDMaterial("ElasticIsotropic",2,1e-3,0.3,0)   # Fantasma
+    ops.nDMaterial("ElasticIsotropic",3,1e20,0,7850)
 
     element_id=1
     idx_to_eid={}
     for idx,conn in enumerate(volumes["Viga"]):
-        if idx in exclude_elements:
-            continue
+        mat = 2 if idx in elementos_fantasma else 1
         node_tags = [int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,1)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,mat)
         idx_to_eid[element_id]=idx
         element_id+=1
 
     for conn in volumes["BC_R1"]:
         node_tags=[int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,2)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,3)
         element_id+=1
     for conn in volumes["BC_1"]:
         node_tags=[int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,2)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,3)
         element_id+=1
 
     for n in volume_nodes["BC_R1"]:
@@ -99,44 +99,8 @@ def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_el
 
     return resultado, idx_to_eid
 
-# === Función que revisa si sigue conectado con nodos críticos
-def sigue_conectado(volumes, elementos_activos, nodos_criticos):
-    # Construir grafo: elemento -> vecinos (por nodos compartidos)
-    elemento_a_nodos = {idx: set(volumes["Viga"][idx]) for idx in elementos_activos}
-    nodo_a_elementos = defaultdict(set)
-    for idx,nodes in elemento_a_nodos.items():
-        for n in nodes:
-            nodo_a_elementos[n].add(idx)
-
-    # Iniciar BFS desde cualquier elemento que contenga un nodo crítico
-    inicio = None
-    for idx in elementos_activos:
-        if any(n in nodos_criticos for n in elemento_a_nodos[idx]):
-            inicio = idx
-            break
-    if inicio is None:
-        return False
-
-    visitados=set()
-    cola=deque()
-    cola.append(inicio)
-    while cola:
-        current=cola.popleft()
-        visitados.add(current)
-        for n in elemento_a_nodos[current]:
-            for vecino in nodo_a_elementos[n]:
-                if vecino not in visitados:
-                    cola.append(vecino)
-
-    # Revisar que todos los elementos que tienen nodos críticos fueron visitados
-    for idx in elementos_activos:
-        if any(n in nodos_criticos for n in elemento_a_nodos[idx]):
-            if idx not in visitados:
-                return False
-    return True
-
-# === Seleccionar qué eliminar
-def seleccionar_a_eliminar(tensiones, percent_to_remove=0.10, protected_indices=None):
+# === Seleccionar qué pasar a fantasma
+def seleccionar_a_fantasma(tensiones, percent_to_remove=0.10, protected_indices=None):
     if protected_indices is None:
         protected_indices=[]
     tensiones_ordenadas = sorted(tensiones,key=lambda x:x[1])
@@ -151,14 +115,14 @@ def seleccionar_a_eliminar(tensiones, percent_to_remove=0.10, protected_indices=
     return eliminados
 
 # === Iteraciones
-n_iteraciones=10
-percent_to_remove=0.001
-exclude_indices=[]
+n_iteraciones=500
+percent_to_remove=0.2
+elementos_fantasma=set()
 
 for iteracion in range(n_iteraciones):
     print(f"\n=== Iteración {iteracion+1}/{n_iteraciones} ===")
 
-    tensiones, idx_to_eid = calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_indices)
+    tensiones, idx_to_eid = calcular_von_mises(points, volumes, volume_nodes, selected_nodes, elementos_fantasma)
     if tensiones is None:
         print("❌ No se pudo resolver. Finalizando.")
         break
@@ -174,26 +138,19 @@ for iteracion in range(n_iteraciones):
         if any(n in nodos_criticos for n in conn):
             protegidos.append(idx)
 
-    candidatos=seleccionar_a_eliminar(tensiones, percent_to_remove, protegidos)
-    print(f"Intentando eliminar {len(candidatos)} candidatos...")
+    candidatos=seleccionar_a_fantasma(tensiones, percent_to_remove, protegidos)
+    print(f"Pasando a material fantasma {len(candidatos)} elementos...")
 
-    confirmados=[]
-    for idx in candidatos:
-        prueba_exclude = exclude_indices + [idx]
-        activos = [i for i,_ in tensiones if i not in prueba_exclude]
-        if sigue_conectado(volumes, activos, nodos_criticos):
-            print(f"✅ Eliminado elemento {idx}")
-            confirmados.append(idx)
-        else:
-            print(f"❌ No se puede eliminar {idx} (rompe conectividad)")
+    elementos_fantasma.update(candidatos)
 
-    if not confirmados:
-        print("⚠️ Ningún elemento eliminado. Finalizando.")
+    # === Construir malla solo con elementos activos (no fantasma)
+    activos = [idx for idx,_ in tensiones if idx not in elementos_fantasma]
+    if not activos:
+        print("✅ Todos los elementos activos eliminados.")
         break
 
-    exclude_indices.extend(confirmados)
+    print(f"Se están ploteando {len(activos)} elementos activos: {activos[:10]}{' ...' if len(activos)>10 else ''}")
 
-    activos = [idx for idx,_ in tensiones if idx not in exclude_indices]
     cells = np.hstack([
         np.full((len(activos),1),4),
         np.array([volumes["Viga"][i] for i in activos])
@@ -205,5 +162,6 @@ for iteracion in range(n_iteraciones):
 
     p = pv.Plotter()
     p.add_mesh(grid, scalars="von_mises", cmap="viridis", show_edges=True, opacity=0.8)
-    p.add_title(f"Iteración {iteracion+1}")
-    p.show()
+    p.add_title(f"Iteración {iteracion+1} - Solo elementos activos")
+    if iteracion == 499:
+        p.show()
