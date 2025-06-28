@@ -5,7 +5,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 # === Leer el archivo .msh ===
-mesh = meshio.read("Proo.msh")
+mesh = meshio.read("prueba_god.msh")
 points = mesh.points
 
 # === Invertir field_data

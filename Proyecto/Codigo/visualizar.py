@@ -109,7 +109,7 @@ for i, p in enumerate(points):
         if abs(p[1] - target_y) < tolerance and abs(p[0] - target_x) < tolerance:
             selected_nodes.append(i)
 
-print(f"Se aplicará la carga en {len(selected_nodes)} nodos con y=110 y z=30.")
+print(f"Se aplicará la carga en {len(selected_nodes)} nodos con x=110 y y=30.")
 
 if len(selected_nodes) == 0:
     raise ValueError("No se encontraron nodos que cumplan la condición.")
@@ -120,7 +120,7 @@ ops.pattern("Plain", 1, 1)
 
 # Aplicar carga distribuida
 for n in selected_nodes:
-    ops.load(int(n + 1), 0,-1e10,0 / len(selected_nodes))
+    ops.load(int(n + 1), 0,-1e10/ len(selected_nodes),0 )
 
 # Configuración análisis
 ops.system("ProfileSPD")
