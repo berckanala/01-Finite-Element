@@ -5,7 +5,7 @@ from openseespy import opensees as ops
 import pyvista as pv
 
 # === Leer malla base ===
-mesh = meshio.read("prueba_god.msh")
+mesh = meshio.read("Proo.msh")
 points = mesh.points
 
 field_data = mesh.field_data
@@ -34,9 +34,9 @@ if not selected_nodes:
     raise ValueError("❌ No se encontraron nodos de carga.")
 
 # === Función que reconstruye modelo y calcula tensiones
-def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_elements=None):
-    if exclude_elements is None:
-        exclude_elements = []
+def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, elementos_fantasma=None):
+    if elementos_fantasma is None:
+        elementos_fantasma = set()
 
     ops.wipe()
     ops.model("basic", "-ndm",3,"-ndf",3)
@@ -45,27 +45,25 @@ def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_el
         ops.node(i+1,*coord)
 
     ops.nDMaterial("ElasticIsotropic",1,3.5e9,0.35,1250)
-    ops.nDMaterial("ElasticIsotropic",2,1e20,0,7850)
+    ops.nDMaterial("ElasticIsotropic",2,1e-3,0.3,0)   # Fantasma
+    ops.nDMaterial("ElasticIsotropic",3,1e20,0,7850)
 
     element_id=1
     idx_to_eid={}
-    viga_idx_to_eid={}
     for idx,conn in enumerate(volumes["Viga"]):
-        if idx in exclude_elements:
-            continue
+        mat = 2 if idx in elementos_fantasma else 1
         node_tags = [int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,1)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,mat)
         idx_to_eid[element_id]=idx
-        viga_idx_to_eid[idx]=element_id
         element_id+=1
 
     for conn in volumes["BC_R1"]:
         node_tags=[int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,2)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,3)
         element_id+=1
     for conn in volumes["BC_1"]:
         node_tags=[int(n+1) for n in conn]
-        ops.element("FourNodeTetrahedron",element_id,*node_tags,2)
+        ops.element("FourNodeTetrahedron",element_id,*node_tags,3)
         element_id+=1
 
     for n in volume_nodes["BC_R1"]:
@@ -87,7 +85,7 @@ def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_el
     print("✅ Ejecutando análisis...")
     ok=ops.analyze(1)
     if ok!=0:
-        return None,None,None
+        return None,None
 
     resultado=[]
     for eid,idx in idx_to_eid.items():
@@ -99,10 +97,10 @@ def calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_el
             vm = np.sqrt(0.5*((sx-sy)**2+(sy-sz)**2+(sz-sx)**2)+3*(txy**2+tyz**2+txz**2))
         resultado.append((idx,vm))
 
-    return resultado, idx_to_eid, viga_idx_to_eid
+    return resultado, idx_to_eid
 
-# === Seleccionar qué eliminar
-def seleccionar_a_eliminar(tensiones, percent_to_remove=0.10, protected_indices=None):
+# === Seleccionar qué pasar a fantasma
+def seleccionar_a_fantasma(tensiones, percent_to_remove=0.10, protected_indices=None):
     if protected_indices is None:
         protected_indices=[]
     tensiones_ordenadas = sorted(tensiones,key=lambda x:x[1])
@@ -117,18 +115,16 @@ def seleccionar_a_eliminar(tensiones, percent_to_remove=0.10, protected_indices=
     return eliminados
 
 # === Iteraciones
-n_iteraciones=50
-percent_to_remove=0.0007
-exclude_indices=[]
+n_iteraciones=1001
+percent_to_remove=0.6
+elementos_fantasma=set()
 
 for iteracion in range(n_iteraciones):
     print(f"\n=== Iteración {iteracion+1}/{n_iteraciones} ===")
 
-    # Calcular tensiones
-    tensiones, idx_to_eid, _ = calcular_von_mises(points, volumes, volume_nodes, selected_nodes, exclude_indices)
-
+    tensiones, idx_to_eid = calcular_von_mises(points, volumes, volume_nodes, selected_nodes, elementos_fantasma)
     if tensiones is None:
-        print("❌ No se pudo resolver con los elementos actuales. Finalizando.")
+        print("❌ No se pudo resolver. Finalizando.")
         break
 
     vm_vals=[vm for _,vm in tensiones if vm>0]
@@ -142,26 +138,20 @@ for iteracion in range(n_iteraciones):
         if any(n in nodos_criticos for n in conn):
             protegidos.append(idx)
 
-    candidatos=seleccionar_a_eliminar(tensiones, percent_to_remove, protegidos)
-    print(f"Intentando eliminar {len(candidatos)} candidatos...")
+    candidatos=seleccionar_a_fantasma(tensiones, percent_to_remove, protegidos)
+    print(f"Pasando a material fantasma {len(candidatos)} elementos...")
 
-    confirmados=[]
-    for idx in candidatos:
-        prueba_exclude = exclude_indices + [idx]
-        resultado, _, _ = calcular_von_mises(points, volumes, volume_nodes, selected_nodes, prueba_exclude)
-        if resultado is not None:
-            print(f"✅ Eliminado elemento {idx}")
-            confirmados.append(idx)
-        else:
-            print(f"❌ No se puede eliminar elemento {idx} (matriz singular)")
+    elementos_fantasma.update(candidatos)
 
-    if not confirmados:
-        print("⚠️ Ningún elemento se pudo eliminar. Finalizando.")
+    # === Construir malla solo con elementos activos (no fantasma)
+# === Construir malla solo con elementos activos (no fantasma)
+    activos = [idx for idx,_ in tensiones if idx not in elementos_fantasma]
+    if not activos:
+        print("✅ Todos los elementos activos eliminados.")
         break
 
-    exclude_indices.extend(confirmados)
+    print(f"Se están ploteando {len(activos)} elementos activos: {activos[:10]}{' ...' if len(activos)>10 else ''}")
 
-    activos = [idx for idx,_ in tensiones if idx not in exclude_indices]
     cells = np.hstack([
         np.full((len(activos),1),4),
         np.array([volumes["Viga"][i] for i in activos])
@@ -173,6 +163,19 @@ for iteracion in range(n_iteraciones):
 
     p = pv.Plotter()
     p.add_mesh(grid, scalars="von_mises", cmap="viridis", show_edges=True, opacity=0.8)
-    p.add_title(f"Iteración {iteracion+1}")
-    if  iteracion == 30:
-        p.show()
+    p.add_title(f"Iteración {iteracion+1} - Solo elementos activos")
+if iteracion == n_iteraciones - 1:
+    p.show()
+
+    # Guardar STL solo en la última iteración
+    filename_stl = f"iteracion_{iteracion+1}_malla.stl"
+    surf = grid.extract_geometry().triangulate()
+    surf.save(filename_stl)
+    print(f"✅ STL de la última iteración exportado como {filename_stl}")
+
+
+    # Visualizar
+    p = pv.Plotter()
+    p.add_mesh(surf, scalars="von_mises", cmap="viridis", show_edges=True, opacity=0.9)
+    p.add_title(f"Iteración {iteracion+1} - Superficie exportada")
+    p.show()
