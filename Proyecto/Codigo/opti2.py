@@ -115,8 +115,8 @@ def seleccionar_a_fantasma(tensiones, percent_to_remove=0.10, protected_indices=
     return eliminados
 
 # === Iteraciones
-n_iteraciones=300
-percent_to_remove=0.5
+n_iteraciones=1000
+percent_to_remove=0.4
 elementos_fantasma=set()
 
 for iteracion in range(n_iteraciones):
@@ -163,5 +163,5 @@ for iteracion in range(n_iteraciones):
     p = pv.Plotter()
     p.add_mesh(grid, scalars="von_mises", cmap="viridis", show_edges=True, opacity=0.8)
     p.add_title(f"Iteración {iteracion+1} - Solo elementos activos")
-    if iteracion == 299:
+    if iteracion == 999:
         p.show()
